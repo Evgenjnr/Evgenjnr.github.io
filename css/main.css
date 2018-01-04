@@ -10,11 +10,12 @@ body{
 /*0. GRID*/
 
 .wrapper {
-	height: 100vh;
+	height: ;
 	max-width: 1200px;
 	margin: 0 auto;
 	background-image: url('../images/background.png');
 	background-repeat: no-repeat;
+	background-position: top;
 
 }
 
@@ -97,7 +98,7 @@ body{
 /* 1.2 logotype */
 
 .logo {
-	padding-top: 50px;
+	padding: 50px 0;
 	text-align: center;
 }
 
