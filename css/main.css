@@ -110,19 +110,22 @@ body{
 
 .container-triangle>div {
 	display: inline-block;
+	font-size: 1rem;
 	width: 50%;
 }
 
-.trianle-left {
-	border-left: ;
-	border-right: ;
-	border-top: ;
-	border-bottom: ;
+.triangle-left {
+	border-left: 0px solid transparent ;
+	border-right: 600px solid transparent;
+	border-top: 0px solid transparent;
+	border-bottom: 65px solid #fff ;
+	height: 0;
+	width: 0;
 }
 
-.trianle-right {
-	border-left: ;
-	border-right: ;
-	border-top: ;
-	border-bottom: ;
+.triangle-right {
+	border-left: 600px solid transparent;
+	border-right:0px solid transparent ;
+	border-top: 0px solid transparent;
+	border-bottom: 65px solid #fff;
 }
