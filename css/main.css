@@ -232,7 +232,6 @@ input {
 .list-fields-item:nth-child(6)>textarea {
 	width: 960px;
 	height: 210px;
-	color: #000;
 }
 
 textarea::-webkit-input-placeholder {
@@ -241,7 +240,15 @@ textarea::-webkit-input-placeholder {
 	padding-top: 24px;
 	text-indent: 24px;
 }
+
 textarea::-moz-placeholder {
+	color: #000;
+	font-size: 24px;
+	padding-top: 24px;
+	text-indent: 24px;
+}
+
+textarea:-moz-placeholder {
 	color: #000;
 	font-size: 24px;
 	padding-top: 24px;
