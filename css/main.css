@@ -241,3 +241,9 @@ textarea::-webkit-input-placeholder {
 	padding-top: 24px;
 	text-indent: 24px;
 }
+textarea::-moz-placeholder {
+	color: #000;
+	font-size: 24px;
+	padding-top: 24px;
+	text-indent: 24px;
+}
