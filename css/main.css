@@ -34,11 +34,11 @@ body{
 }
 
 .column-4{
-	max-width: 800px;
+	max-width: 83,3%;
 }
 
 .column-2{
-	max-width: 160px;
+	max-width: 16,7%;
 	padding-left: 60px;
 }
 
@@ -70,15 +70,16 @@ body{
 /*1.1 NAV*/
 .nav-list{
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 3px;
 	list-style: none;
 }
 .nav-item{
 	display: inline-block;
 	margin:0 30px;
+	text-align: center;
 }
 .nav-item:last-child{
-	margin-right: 80px;
+	margin-right: 83px;
 }
 .nav-link{
 	color: #fff;
@@ -87,7 +88,7 @@ body{
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 18px;
-	line-height: 20px;
+	line-height: 10px;
 	padding: 26px 0 23px 0;
 	border-bottom: 3px solid transparent;
 }
@@ -98,7 +99,7 @@ body{
 /* 1.2 logotype */
 
 .logo {
-	padding: 50px 0;
+	padding: 55px 0 30px;
 	text-align: center;
 }
 
@@ -119,7 +120,7 @@ body{
 	border-left: 0px solid transparent ;
 	border-right: 600px solid transparent;
 	border-top: 0px solid transparent;
-	border-bottom: 65px solid #fff ;
+	border-bottom: 65px solid #f8f5f2 ;
 	height: 0;
 	width: 0;
 }
@@ -128,45 +129,85 @@ body{
 	border-left: 600px solid transparent;
 	border-right:0px solid transparent ;
 	border-top: 0px solid transparent;
-	border-bottom: 65px solid #fff;
+	border-bottom: 65px solid #f8f5f2;
 }
 
-.wrap {
-	background-color: #fff;
+.booking-form {
+	background-color: #f8f5f2;
 	width: 100%;
 }
 
-.content{
+.wrap{
 	margin: 0 auto;
 	width: 80%;
 	font-size: 0;
 }
 .content>div {
-	background-color: #fff;
+	background-color: #f8f5f2;
 	display: inline-block;
-	padding: 0;
-	margin: 0;
+	/* padding: 0;
+	margin: 0; */
 	width: 50%;
 }
 
 .title, .rewback {
-	padding: 0;
-	margin: 0;
 	text-transform: uppercase;
+}
+
+.title {
+	padding-top: 50px;
 }
 
 .title h2 {
 	font-size: 40px;
 	font-weight: bold;
+	margin: 0;
 }
 
 .rewback {
+	vertical-align: top;
 	text-align: right;
+	padding-top: 67px;
 }
 
-.rewback span {
+.rewback a {
+	color: #000;
+	background-color: #fff;
 	border: 1px solid lightgray;
 	font-size: 18px;
 	font-weight: bold;
 	padding: 12px 35px;
+	text-decoration: none;
+}
+
+.rewback a:active {
+	background-color: lightgray;
+	border: 3px inset grey;
+	color: #fff;
+	padding-right: 33px;
+}
+/* input fields */
+
+.forma {
+	
+}
+
+.forma>div {
+	display: inline-block;
+}
+
+#name, #family, #secondname {
+	width: 295px;
+	font-size: 24px;
+	padding: 18px 0;
+}
+
+#family {
+	margin: 0 37px;
+}
+
+#phonenumber, #e-mail {
+	font-size: 24px;
+	width: 462px;
+	padding: 18px 0;
 }
