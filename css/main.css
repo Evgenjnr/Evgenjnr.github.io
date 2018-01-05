@@ -234,6 +234,14 @@ input {
 	height: 210px;
 }
 
+input::placeholder {
+	color: #000;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
 textarea::-webkit-input-placeholder {
 	color: #000;
 	font-size: 24px;
@@ -259,4 +267,8 @@ textarea::-ms-input-placeholder {
 	font-size: 24px;
 	padding-top: 24px;
 	text-indent: 24px;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
 }
