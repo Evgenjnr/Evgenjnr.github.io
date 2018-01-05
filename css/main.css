@@ -247,3 +247,9 @@ textarea::-moz-placeholder {
 	padding-top: 24px;
 	text-indent: 24px;
 }
+textarea::-ms-input-placeholder {
+	color: #000;
+	font-size: 24px;
+	padding-top: 24px;
+	text-indent: 24px;
+}
