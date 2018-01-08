@@ -72,6 +72,7 @@ body{
 	margin: 0;
 	padding: 0 0 0 3px;
 	list-style: none;
+	font-family: 'PT Sans Narrow', sans-serif;
 }
 .nav-item{
 	display: inline-block;
@@ -93,7 +94,11 @@ body{
 	border-bottom: 3px solid transparent;
 }
 .nav-link:hover{
-	border-bottom: 3px solid #826550;
+	border-bottom-width: 3px solid ;
+	border-bottom-style: solid;
+	border-bottom-color:#826550 ;
+	transition: border-bottom-color 1s,
+	height 1s;
 }
 
 /* 1.2 logotype */
@@ -180,6 +185,9 @@ body{
 	text-decoration: none;
 }
 
+.rewback a:hover {
+	background-color: lightgray;
+}
 .rewback a:active {
 	background-color: lightgray;
 	border: 3px inset grey;
@@ -201,37 +209,40 @@ body{
 	padding: 18px 0;
 } */
 
-.list-fields-item:nth-child(-n+3) {
+/* .list-fields-item:nth-child(-n+3) { 
 	width: 294px;
-}
+}*/
 
 .list-fields-item:nth-child(2) {
 	margin: 0 39px;
 }
 .list-fields-item:nth-child(4) {
-	margin: 37px 36px 37px 0;
+	margin: 36px 36px 36px 0;
 }
 
 
 
-#phonenumber, #e-mail {
-	width: 462px;
-	padding: 18px 0;
-}	
+	
 
 input {
 	border: 1px solid #e5ddd5;
 	box-sizing: border-box;
-	font-family: 'PTSans', sans-serif;
+	font-family: 'PT Sans Narrow', sans-serif;
 	font-size: 24px;
 	line-height: 24px;
-	padding: 20px 0;
+	padding: 18px 0;
 	text-indent: 24px;
+	width: 294px;
+}
+#phonenumber, #e-mail {
+	width: 462px;
+	/* padding: 18px 0; */
 }
 
 .list-fields-item:nth-child(6)>textarea {
 	width: 960px;
 	height: 210px;
+	border: 1px solid #e5ddd5;
 }
 
 input::placeholder {
@@ -245,8 +256,10 @@ input:focus::-webkit-input-placeholder {
 textarea::-webkit-input-placeholder {
 	color: #000;
 	font-size: 24px;
-	padding-top: 24px;
+	line-height: 24px;
+	padding-top: 18px;
 	text-indent: 24px;
+	font-family: 'PT Sans Narrow', sans-serif;
 }
 
 textarea::-moz-placeholder {
@@ -254,6 +267,7 @@ textarea::-moz-placeholder {
 	font-size: 24px;
 	padding-top: 24px;
 	text-indent: 24px;
+	font-family: 'PT Sans Narrow', sans-serif;
 }
 
 textarea:-moz-placeholder {
@@ -261,14 +275,22 @@ textarea:-moz-placeholder {
 	font-size: 24px;
 	padding-top: 24px;
 	text-indent: 24px;
+	font-family: 'PT Sans Narrow', sans-serif;
 }
 textarea::-ms-input-placeholder {
 	color: #000;
 	font-size: 24px;
 	padding-top: 24px;
 	text-indent: 24px;
+	font-family: 'PT Sans Narrow', sans-serif;
 }
 
 textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+}
+textarea:focus::-ms-input-placeholder {
   opacity: 0;
 }
