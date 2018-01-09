@@ -50,11 +50,8 @@ body{
 	font-weight: 700;
 	line-height: 20px;
 	padding: 26px 0 23px 0;
-	border-bottom: 3px solid transparent;
-}
-
-.column-2 a:hover {
-	border-bottom: 3px solid #826550;
+	position: relative;
+	
 }
 
 .column-2 a>span{
@@ -78,7 +75,11 @@ body{
 	display: inline-block;
 	margin:0 30px;
 	text-align: center;
+	position: relative;
+
 }
+
+
 .nav-item:last-child{
 	margin-right: 83px;
 }
@@ -93,13 +94,32 @@ body{
 	padding: 26px 0 23px 0;
 	border-bottom: 3px solid transparent;
 }
-.nav-link:hover{
-	border-bottom-width: 3px solid ;
-	border-bottom-style: solid;
-	border-bottom-color:#826550 ;
-	transition: border-bottom-color 1s,
-	height 1s;
+
+a.nav-link::after {
+	content:'';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transform-origin: center;
+	-webkit-transform: scale(0, 1);
+	-ms-transform: scale(0, 1);
+	-o-transform: scale(0, 1);
+	transform: scale(0, 1);
+	border-bottom: 3px solid #826550;
+	border-radius: 20% 20%;
 }
+
+a.nav-link:hover::after{
+	-webkit-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition: transform .5s;
+	
+	
+}
+
 
 /* 1.2 logotype */
 
@@ -115,7 +135,7 @@ body{
 	margin: 0;
 }
 
-.container-triangle>div {
+.container-triangle div {
 	display: inline-block;
 	font-size: 1rem;
 	width: 50%;
