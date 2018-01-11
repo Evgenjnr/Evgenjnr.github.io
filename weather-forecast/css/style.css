@@ -1,0 +1,175 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+.wrapper {
+	background-color: #3399cc;
+	border: 18px solid #2b81ac;
+	height: 100%;
+}
+
+.header {
+	color: #fff;
+	margin: 0 auto;
+	width: 50%;
+}
+h1>i {
+	vertical-align: middle;
+}
+/* центральный блок с элементами */
+.content {
+	border: 5px solid #fff;
+	font-size: 0;
+	margin: 0 auto;
+	max-width: 686px;
+}
+/* ./центральный блок с элементами */
+
+
+/* общие параметры для элементов внутри центрального блока */
+.content>div {
+	display: inline-block;
+	border: 5px solid white;
+	box-sizing: content-box;
+	color: #fff;
+	font-size: 1rem;
+	padding-top: 20px;/*отступ для <span>название города</span>*/
+	text-align: center;
+	margin-left: -5px;
+	margin-top: -5px;
+}
+/* ./общие параметры для элементов внутри центрального блока */
+
+
+/* при наведении курсора на центральный блок */
+.content:hover>div {
+	opacity: .3; /* все элементы получают прозрачность*/
+}
+
+.content>div:hover {
+	opacity: 1; /* кроме элемента над которым курсор */
+	transition: opacity .5s; /* плавная анимация прозрачности*/
+	border-left: 5px solid #fff;
+}
+
+/* ./ при наведении курсора на центральный блок */
+
+
+.content div>p {
+	margin-top: 10px; /*отступ для <p>температура <i>значёк погоды</i></p> от <span>название города</span></p>*/
+}
+
+/* рамки для элементов - УСТАНОВЛЕНЫ ЧАСТИЧНО */
+
+
+
+
+/* ./ рамки для элементов - УСТАНОВЛЕНЫ ЧАСТИЧНО */
+p {
+	font-size: 20px;/*размер шрифта - температура*/
+}
+
+i {
+	font-size: 30px;/*размер шрифта - значёк погоды*/
+	vertical-align: bottom;/*выравнивание значка погоды*/
+}
+
+
+/* элементы центрального блока */
+.lisbon{
+	background-color: #3399cc;
+	width: calc(50% - 5px);/*ширина элемента относительно .content*/
+}
+
+.paris {
+	background-color: #3cc;
+	width: calc(25% - 5px);/*ширина элемента относительно .content*/
+}
+
+
+
+.belgrad {
+	background-color: #969;
+	width: 25%;/*ширина элемента относительно .content*/
+	margin-right: -5px;
+}
+
+
+.moscow {
+	background-color: #c24747;
+	width: calc(25% - 5px);/*ширина элемента относительно .content*/
+}
+
+
+
+.telaviv {
+	background-color: #e2674a;
+	width: calc(25% - 5px);/*ширина элемента относительно .content*/
+}
+
+
+
+.cair {
+	background-color: #fc6;
+	width: calc(25% - 5px);/*ширина элемента относительно .content*/
+}
+
+
+.newyork {
+	background-color: #9c9;
+	width: 25%;/*ширина элемента относительно .content*/
+	margin-right: -5px;
+}
+
+
+.newdelhi {
+	background-color: #699;
+	width: calc(25% - 5px);/*ширина элемента относительно .content*/
+}
+
+
+.sanfranc {
+	background-color: #c69;
+	width: calc(50% - 5px);/*ширина элемента относительно .content*/
+}
+
+
+
+.tokyo {
+	background-color: #396;
+	width: 25%;/*ширина элемента относительно .content*/
+	margin-right: -5px;
+}
+
+
+
+.sydney {
+	background-color: #669;
+	width: 100%;/*ширина элемента относительно .content*/
+	margin-bottom: -5px;
+}
+
+
+
+/* ./элементы центрального длока */
+
+.footer {
+	margin: 15px auto;
+	width: 50%;
+}
+
+.footer-text {
+	color: #fff;
+	margin: 0;
+	font-size: 15px;
+}
