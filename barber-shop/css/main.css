@@ -1,0 +1,259 @@
+/*settings ajustment*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'PT Sans Narrow', sans-serif;
+	margin: 0;
+}
+/*0. GRID*/
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #353535;
+	background-image: url('../images/background.png');
+	background-repeat: no-repeat;
+	background-position: top;
+
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.column-wrap{
+	font-size: 0;
+}
+
+.column-wrap > div{
+	display: inline-block;
+	font-size: 16px;
+}
+
+.column-4{
+	max-width: 83%;
+}
+
+.column-2{
+	max-width: 17%;
+	padding-left: 60px;
+}
+
+.column-2 a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+	padding: 26px 0 23px 0;
+	position: relative;
+	
+}
+
+.column-2 a>span{
+	margin-left: 20px;
+}
+
+/*1.Header*/
+.header{
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #000;
+}
+/*1.1 NAV*/
+.nav-list{
+	margin: 0;
+	padding: 0 0 0 3px;
+	list-style: none;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+.nav-item{
+	display: inline-block;
+	margin:0 30px;
+	text-align: center;
+	position: relative;
+
+}
+
+
+.nav-item:last-child{
+	margin-right: 83px;
+}
+.nav-link{
+	color: #fff;
+	display: block;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 10px;
+	padding: 26px 0 23px 0;
+	border-bottom: 3px solid transparent;
+}
+
+a.nav-link::after {
+	content:'';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transform-origin: center;
+	-webkit-transform: scale(0, 1);
+	-ms-transform: scale(0, 1);
+	-o-transform: scale(0, 1);
+	transform: scale(0, 1);
+	border-bottom: 3px solid #826550;
+	border-radius: 20% 20%;
+}
+
+a.nav-link:hover::after{
+	-webkit-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition: transform .5s;
+	
+	
+}
+
+
+/* 1.2 logotype */
+
+.logo {
+	padding: 58px 0 138px;
+	text-align: center;
+}
+
+.logo>img {
+	height: 150px;
+}
+
+.container-triangle {
+	font-size: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.container-triangle div {
+	display: inline-block;
+	font-size: 1rem;
+	width: 50%;
+}
+
+.triangle-left {
+	border-left: 0px solid transparent ;
+	border-right: 600px solid transparent;
+	border-top: 0px solid transparent;
+	border-bottom: 65px solid #f8f5f2 ;
+	height: 0;
+	width: 0;
+}
+
+.triangle-right {
+	border-left: 600px solid transparent;
+	border-right:0px solid transparent ;
+	border-top: 0px solid transparent;
+	border-bottom: 65px solid #f8f5f2;
+}
+.block-content, .block2-content {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 138px;
+	font-size: 0; 
+}
+
+.block2-content {
+	padding: 0;
+}
+.block-content>div, .block2-content>div {
+	display: inline-block;
+	padding-left: 40px;
+	padding-top: 30px;
+	padding-right: 40px;
+	font-size: 1rem;
+	text-align: left;
+	width: 33.3%;
+	height: 160px;
+	vertical-align: top;
+}
+
+.block-content>div:not(:first-child), .block2-content>div:not(:first-child) {
+	padding: 0;
+}
+
+.block-content>div>p, .block2-content>div>p {
+	padding: 0;
+}
+
+.left-element {
+	background-color: #fff;
+	color: #000;
+}
+
+.l-elt {
+	font-size: 40px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+	line-height: 40px;
+	margin-top: 0;
+}
+
+.center-element {
+	background-color: #404040;
+	color: #fff;
+}
+
+
+.c-elt {
+	font-size: 4.5rem;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: bold;
+	margin: 15px 0 0 35px;
+}
+
+.c-elt-sec {
+	font-size: 1.25rem;
+	font-family: 'PT Sans Narrow', sans-serif;
+	margin: 0 0 0 35px;
+}
+
+.right-element {
+	background-color: #4e4e4e;
+	color: #fff;
+}
+
+.r-elt {
+	font-size: 4.5rem;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: bold;
+	margin: 15px 0 0 35px;
+}
+
+.r-elt-sec {
+	font-size: 1.25rem;
+	font-family: 'PT Sans Narrow', sans-serif;
+	margin: 0 0 0 35px;
+}
+
+.block2-content .left-element {
+	padding-top: 0;
+}
+.block2-content .left-element .l-elt {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 20px;
+}
+
+.block2-content .center-element {
+	background-color: #353535;
+}
+
+.block2-content .right-element {
+	background-color: #404040;
+}
