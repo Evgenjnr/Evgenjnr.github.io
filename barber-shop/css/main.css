@@ -163,8 +163,12 @@ a.nav-link:hover::after{
 .block-content, .block2-content {
 	width: 80%;
 	margin: 0 auto;
-	padding-top: 138px;
 	font-size: 0; 
+}
+
+.block-content {
+	position: relative;
+	padding-top: 138px;
 }
 
 .block2-content {
@@ -175,24 +179,27 @@ a.nav-link:hover::after{
 	padding-left: 40px;
 	padding-top: 30px;
 	padding-right: 40px;
-	font-size: 1rem;
+	font-size: 16px;
 	text-align: left;
 	width: 33.3%;
 	height: 160px;
 	vertical-align: top;
 }
 
-.block-content>div:not(:first-child), .block2-content>div:not(:first-child) {
+.block-content>div.center-element, div.right-element, .block2-content>div:not(:nth-child(1)) {
 	padding: 0;
 }
+
 
 .block-content>div>p, .block2-content>div>p {
 	padding: 0;
 }
 
-.left-element {
+
+.left-element-top {
 	background-color: #fff;
 	color: #000;
+	padding-top: 40px;
 }
 
 .l-elt {
@@ -240,8 +247,26 @@ a.nav-link:hover::after{
 	margin: 0 0 0 35px;
 }
 
+.block-content .el-triangle {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 175px;
+	left: -23px;
+	border-right: 0px solid transparent;
+	border-left: 23px solid transparent;
+	border-top: 23px solid #fff;
+	border-bottom: 0 solid transparent;
+}
+
 .block2-content .left-element {
+	background-color: #fff;
+	color: #000;
 	padding-top: 0;
+	border-right: 1px solid transparent;
+	border-left: 2px solid transparent;
 }
 .block2-content .left-element .l-elt {
 	font-family: 'PT Sans Narrow', sans-serif;
