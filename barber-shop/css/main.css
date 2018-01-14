@@ -249,7 +249,7 @@ p.stat-count {
 	font-size: 20px;
 	font-family: "PTSansNarrowRegular";
 }
-
+/* block three column */
 .three-col {
 	width: 100%;
 	margin: 0 auto;
@@ -303,7 +303,9 @@ p.stat-count {
 	letter-spacing: .8px;
 	line-height: 24px;
 }
+/* ./block three column */
 
+/* triangle block */
 .triangle {
 	width: 100%;
 	padding-top: 40px;
@@ -334,3 +336,5 @@ p.stat-count {
 	border-right: 0px solid transparent;
 	border-left: calc((100vw / 2) - 9px) solid transparent;
 }
+
+/* ./triangle block */
