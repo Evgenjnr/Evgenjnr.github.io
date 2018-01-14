@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 html, body {
@@ -162,7 +164,7 @@ a.nav-link:hover {
 
 .col-wrap {
 	font-size: 0;
-	transform: translateY(-50%);
+	/* transform: translateY(-50%); */
 }
 
 .colum-2, .colum-4 {
@@ -206,7 +208,8 @@ background-color: #fff;
 	width: 50%;
 	min-height: 160px;
 	font-size: 16px;
-	padding: 35px 35px;
+	padding: 25px 35px;
+	/* line-height: 18px; */
 }
 
 .stat-item:last-child {
@@ -217,12 +220,23 @@ background-color: #fff;
 	width: 100%;
 	font-size: 40px;
 	font-family: "PTSansNarrowBold";
-	padding-right: 75px;
-	padding-top: 0;
-	padding-bottom: 25px;
+	line-height: 35px;
+	padding: 35px 70px 50px 40px;
 }
 
-.stat-count {
+.colum-2>.stat-list li.stat-item p {
+	margin: 0;
+}
+
+.colum-2>.stat-list li.stat-item:nth-child(2) {
+	background-color: #223ffa;
+	font-size: 20px;
+	font-family: "PTSansNarrowRegular";
+	line-height: 24px;
+	padding-top: 0;
+}
+
+p.stat-count {
 	font-size: 72px;
 	font-family: "PTSansNarrowBold";
 }
@@ -230,8 +244,6 @@ background-color: #fff;
 .stat-count-desk {
 	font-size: 20px;
 	font-family: "PTSansNarrowRegular";
-	margin-top: 10px;
-	margin-bottom: 0;
 }
 
 .three-col {
