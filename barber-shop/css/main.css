@@ -362,3 +362,7 @@ p.stat-count {
 	text-align: center;
 	text-transform: uppercase;
 }
+
+.head-header {
+	margin-top: 60px;
+}
