@@ -154,16 +154,20 @@ a.nav-link:hover {
 
 .content {
 	width: 100%;
+	background-color: #353535;
 }
 
 .statistic {
 	width: 80%;
 	margin: 0 auto;
+	position: relative;
 
 }
 
 .col-wrap {
 	font-size: 0;
+	position: absolute;
+	top: -160px;
 	/* transform: translateY(-50%); */
 }
 
@@ -264,25 +268,69 @@ p.stat-count {
 	text-align: center;
 	max-width: 33.3%;
 	font-size: 16px;
+	float: left;
 
 }
 
 .list-col-item {
-	/* float: left; */
-	padding: 75px 40px 0;
+	padding: 235px 40px 0;
 }
 
 .list-col-item:nth-child(2) {
-	padding: 75px 65px 0;
+	padding: 235px 65px 0;
+}
+
+
+.col-head {
+	font-size: 30px;
+	font-family: "PTSansNarrowBold";
+	line-height: 30px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.col-head:nth-child(2) {
+	margin-top: 32px;
+}
+
+.col-head:nth-child(3) {
+	margin-top: 28px;
 }
 
 .col-tex {
 	font-size: 20px;
 	font-family: "PTSansNarrowRegular";
 	letter-spacing: .8px;
+	line-height: 24px;
 }
 
-.col-head {
-	font-size: 30px;
-	font-family: "PTSansNarrowBold";
+.triangle {
+	width: 100%;
+	padding-top: 40px;
+}
+
+.inset-container {
+	font-size: 0;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.inset-container>div {
+	display: inline-block;
+}
+
+.left-triangle {
+	border-top: 0px solid transparent;
+	border-bottom: 65px solid #fff;
+	border-left: 0px solid transparent ;
+	border-right: calc((100vw / 2) - 9px) solid transparent;
+	width: 0;
+	height: 0;
+}
+
+.right-triangle {
+	border-bottom: 65px solid #fff;
+	border-top:0px solid transparent ;
+	border-right: 0px solid transparent;
+	border-left: calc((100vw / 2) - 9px) solid transparent;
 }
