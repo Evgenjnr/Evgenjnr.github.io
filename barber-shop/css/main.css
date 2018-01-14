@@ -338,3 +338,27 @@ p.stat-count {
 }
 
 /* ./triangle block */
+
+/* news block */
+
+.news-content, .head-wrap {
+	width: 100%;
+	background-color: #fff;
+}
+
+.head-content {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.head-content>div {
+	display: inline-block;
+}
+
+.left-content-head {
+	font-size: 40px;
+	font-family: "PTSansNarrowBold";
+	text-align: center;
+	text-transform: uppercase;
+}
