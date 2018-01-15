@@ -370,15 +370,48 @@ p.stat-count {
 
 .head-content>div {
 	display: inline-block;
+	width: 50%;
 }
 
 .left-content-head {
 	font-size: 40px;
 	font-family: "PTSansNarrowBold";
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
+	padding-left: 70px;
 }
 
 .head-header {
 	margin-top: 60px;
+}
+
+.right-button-cont {
+	text-align: right;
+	vertical-align: top;
+}
+
+.butt {
+	display: inline-block;
+	border: 1px solid transparent;
+	margin-top: 70px;
+}
+
+.but-link {
+	padding: 15px 28px;
+	border: 1px solid #e5ddd5;
+	font-size: 18px;
+	font-family: "PTSansNarrowBold";
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+	width: 160px;
+}
+
+.but-link:hover {
+	background-color: #353535;
+	color: #826550;
+}
+
+.but-link:active {
+	color: #fff;
 }
