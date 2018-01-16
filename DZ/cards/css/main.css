@@ -55,7 +55,7 @@ body {
 	display: block;
 	text-decoration: none;
 	max-width: 100%;
-	cursor: crosshair;
+	cursor: url('../images/Thor-normal.cur'), pointer;
 }
 
 .card-link>img {
@@ -87,6 +87,10 @@ body {
 .bottom-info {
 	color: #fff;
 	font-size: .875rem;
+}
+
+span {
+	/* padding-right: 8px; */
 }
 
 span:after {
