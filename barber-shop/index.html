@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Barber-Shop</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
-
+	<title>Rediz-bbsh</title>
+	<link rel="stylesheet" href="libs/normalize/normalize.css">
+	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="icon" type="image/png" href="images/favicon.ico" >
 </head>
@@ -13,75 +13,133 @@
 		<header class="header">
 			<div class="container">
 				<div class="column-wrap">
-					<div class="column-4">
-						<!-- навигация -->
+					<div class="col-4">
 						<nav class="nav">
 							<ul class="nav-list">
 								<li class="nav-item">
-									<a href="#" class="nav-link">Главная</a>
+									<a class="nav-link" href="#">Главная</a>
 								</li>
 								<li class="nav-item">
-									<a href="#" class="nav-link">Наши работы</a>
+									<a class="nav-link" href="#">Наши работы</a>
 								</li>
 								<li class="nav-item">
-									<a href="#" class="nav-link">Записаться</a></li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Контакты</a>
+									<a class="nav-link" href="#">Записаться</a>
 								</li>
 								<li class="nav-item">
-									<a href="https://htmlacademy.ru" class="nav-link" target="_blank">HTML Academy</a
+									<a class="nav-link" href="#">Контакты</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">HTML Academy</a>
 								</li>
 							</ul>
 						</nav>
-						<!-- ./ynavigation -->
 					</div>
-					<div class="column-2">
-						<a href="#" class="nav-link">
-							<img src="images/login.png" alt="login">
-							<span>ВХОД</span>
-						</a>
+					<div class="col-2">
+						<div class="header-but">
+							<button class="login-btn">вход</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</header>
-
+		<div class="hdr-logo">
 			<div class="logo">
-				<img src="images/logotype-desktop.svg" alt="logo-img">
+				<img src="images/logotype-desktop.svg" alt="logo-desk">
 			</div>
-			<div class="block-content">
-				<div class="left-element">
-					<p class="l-elt">Стрижка у нас это выгодно!</p>
+		</div>
+		<div class="content">
+			<div class="statistic">
+				<div class="col-wrap clearfix">
+					<div class="colum-2">
+						<div class="trngl-lft"></div>
+						<ul class="stat-list">
+							<li class="stat-item">
+								<p>
+									Стрижка у нас это выгодно!
+								</p>
+							</li>
+							<li class="stat-item">
+								<p>
+									Мужская стрижка требует точного подхода. Обратимся к статистике:
+								</p>
+								<p></p>
+							</li>
+						</ul>
+					</div>
+					<div class="colum-4 colum-4--stat-col">
+						<ul class="stat-list">
+							<li class="stat-item" style="background-color: #404040;">
+								<p class="stat-count">
+									1 500 <small><sup>*</sup></small>
+								</p>
+								<p class="stat-count-desk">
+									рублей вложений
+								</p>
+							</li>
+							<li class="stat-item" style="background-color: #4e4e4e;">
+								<p class="stat-count">
+									7 200
+								</p>
+								<p class="stat-count-desk">
+									секунд времени мастера
+								</p>
+							</li>
+							<li class="stat-item" style="background-color: #353535;">
+								<p class="stat-count">90 000</p>
+								<p class="stat-count-desk">постриженных волос</p>
+							</li>
+							<li class="stat-item" style="background-color: #404040;">
+								<p class="stat-count">500&nbsp; 000&nbsp;<small><sup>*</sup></small></p>
+								<p class="stat-count-desk">лайков и комплиментов</p>
+							</li>
+						</ul>
+					</div>					
 				</div>
-				<div class="center-element">
-					<p class="c-elt">1&nbsp;500&nbsp;*</p>
-					<p class="c-elt-sec">рублей вложений</p>
-				</div>
-				<div class="right-element">
-					<p class="r-elt">7&nbsp;200</p>
-					<p class="r-elt-sec">секунд времени мастера</p>
+				<div class="three-col clearfix">
+						<ul class="list-col">
+							<li class="list-col-item colum-2">
+								<img src="images/advantage-1-illustration.png" alt="">
+								<h2 class="col-head">БЫСТРО</h2>
+								<p class="col-tex">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки
+								</p>
+							</li>
+							<li class="list-col-item colum-2">
+								<img src="images/advantage-2-illustration.png" alt="">
+								<h2 class="col-head">КРУТО</h2>
+								<p class="col-tex">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
+								</p>
+							</li>
+							<li class="list-col-item colum-2">
+								<img src="images/advantage-3-illustration.png" alt="">
+								<h2 class="col-head">ДОРОГО</h2>
+								<p class="col-tex">
+									Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?
+								</p>
+							</li>
+						</ul>
+					</div>
+			</div>
+			<div class="triangle">
+				<div class="inset-container">
+					<div class="left-triangle"></div>
+					<div class="right-triangle"></div>
 				</div>
 			</div>
-			<div class="block2-content">
-				<div class="left-element">
-					<span class="l-elt">Мужская стрижка требует точного подхода. Обратимся к статистике</span>
-				</div>
-				<div class="center-element">
-					<p class="c-elt">90&nbsp;000&nbsp;</p>
-					<p class="c-elt-sec">постриженных волос</p>
-				</div>
-				<div class="right-element">
-					<p class="r-elt">500&nbsp;000&nbsp;*</p>
-					<p class="r-elt-sec">лайков и комплиментов</p>
+		</div>
+		<div class="news-content">
+			<div class="head-wrap">
+				<div class="head-content">
+					<div class="left-content-head">
+						<p class="head-header">Новости и акции</p>
+					</div>
+					<div class="right-button-cont">
+						<p class="butt">
+							<a href="#" class="but-link">ПОКАЗАТЬ ВСЕ</a>
+						</p>
+					</div>
 				</div>
 			</div>
-
-			<div class="container-triangle">
-				<div class="triangle-left"></div>
-				<div class="triangle-right"></div>
-			</div>
-
-		
+		</div>
 	</div>
-
 </body>
 </html>
