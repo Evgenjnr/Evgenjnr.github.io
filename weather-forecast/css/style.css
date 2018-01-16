@@ -16,13 +16,19 @@ body {
 	background-color: #3399cc;
 	border: 18px solid #2b81ac;
 	height: 100%;
-	padding-top: calc(20%/2);
+	position: relative;
 }
 
 .container {
+	position: absolute;
 	width: 80%;
-	margin:  0 auto;
-	height: 80%;
+	height: 566px;
+	margin:  auto;
+	
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .header {
