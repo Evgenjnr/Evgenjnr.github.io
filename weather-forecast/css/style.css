@@ -16,13 +16,13 @@ body {
 	background-color: #3399cc;
 	border: 18px solid #2b81ac;
 	height: 100%;
-	padding-top: calc(20%/2);
+	padding-top: 3%;
 }
 
 .container {
 	width: 80%;
 	margin:  0 auto;
-	height: 80%;
+	/* height: 80%; */
 }
 
 .header {

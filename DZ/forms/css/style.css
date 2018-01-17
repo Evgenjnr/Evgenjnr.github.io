@@ -62,7 +62,7 @@ html, body, .wrapper {
 	text-transform: uppercase;
 	font-size: 20px;
 	line-height: 24px;
-	color: #000;
+	color: rgba(0, 0, 0, .7);
 }
 
 .field-content {
@@ -119,6 +119,12 @@ html, body, .wrapper {
 	margin: 0 auto;
 }
 
+.text-title {
+	color: rgba(0, 0, 0, .7);
+	font-size: 20px;
+	font-family: 'Robotoregular', sans-serif;
+}
+
 .list-flds {
 	padding: 0;
 	margin: 0;
@@ -129,7 +135,12 @@ html, body, .wrapper {
 	display: inline-block;
 }
 
-input {
+input, select {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+input:focus, select:focus {
 	border-top: none;
 	border-left: none;
 	border-right: none;

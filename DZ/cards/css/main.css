@@ -64,7 +64,7 @@ body {
 
 .card-hover {
 	background: linear-gradient(to bottom, transparent 0%, grey 100%);
-	padding-top: 16px;
+	padding-top: 25px;
 	position: absolute;
 	bottom: -50%;
 	text-align: center;
@@ -80,13 +80,18 @@ body {
 
 .head-info {
 	color: #fff;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 
 .bottom-info {
 	color: #fff;
-	font-size: .875rem;
+	font-size: 1.1rem;
+	width: 50%;
+	margin: 0 auto;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 span {

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Barber-Shop</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
-
+	<link rel="stylesheet" href="libs/normalize/normalize.css">
+	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="icon" type="image/png" href="images/favicon.ico" >
 </head>
@@ -27,23 +27,23 @@
 						<!-- ./ynavigation -->
 					</div>
 					<div class="column-2">
-						<a href="#" class="nav-link">
-							<img src="images/login.png" alt="login">
-							<span>ВХОД</span>
-						</a>
+						<div class="header-button-wrap">
+							<button class="login-btn">ВХОД</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 
 			<div class="logo">
-				<img src="images/logotype-desktop.svg" alt="logo=img">
+				<img src="images/logotype-desktop.svg" alt="logo-img">
+				<div class="container-triangle">
+					<div class="triangle-left"></div>
+					<div class="triangle-right"></div>
+				</div>
 			</div>
 
-			<div class="container-triangle">
-				<div class="triangle-left"></div>
-				<div class="triangle-right"></div>
-			</div>
+			
 
 		<div class="booking-form">
 			<div class="wrap">
@@ -80,63 +80,66 @@
 							<div class="purpose-header"><h2>ВЫберите модель бороды:</h2></div>
 								<div class="list-select">
 									<div>
-										<form action="#" method="post">
+										
 											<input type="radio" name="beard" value="admiral" id="admiral">
 											<label for="admiral"></label>
-										</form>
-										<figure>
-											<figcaption>aдмирал</figcaption>
-											<img src="images/beard-1.png" alt="#">
-										</figure>
+										
+										<div class="fig">
+											<figure>
+												<figcaption>aдмирал</figcaption>
+												<img src="images/beard-1.png" alt="#">
+											</figure>
+										</div>
 									</div>
 									<div>
-										<form>
+										
 											<input type="radio" name="beard" value="lumberjack" id="lumberjack">
 											<label for="lumberjack"></label>
-										</form>
-										<figure>
-											<figcaption>лесоруб</figcaption>
-											<img src="images/beard-2.png" alt="">
-										</figure>
+										
+										<div class="fig">
+											<figure>
+												<figcaption>лесоруб</figcaption>
+												<img src="images/beard-2.png" alt="">
+											</figure>
+										</div>
 									</div>
 									<div>
-										<form>	
+										
 											<input type="radio" name="beard" value="polar-explorer" id="polar-explorer">
 											<label for="polar-explorer"></label>
-										</form>
-										<figure>
-											<figcaption>полярник</figcaption>
-											<img src="images/beard-3.png" alt="">
-										</figure>
+										
+										<div class="fig">
+											<figure>
+												<figcaption>полярник</figcaption>
+												<img src="images/beard-3.png" alt="">
+											</figure>
+										</div>
 									</div>
 									<div>
-										<form>	
+											
 											<input type="radio" name="beard" value="boyar" id="boyar">
 											<label for="boyar"></label>
-										</form>
-										<figure>
-											<figcaption>боярин</figcaption>
-											<img src="images/beard-4.png" alt="">
-										</figure>
+										
+										<div class="fig">
+											<figure>
+												<figcaption>боярин</figcaption>
+												<img src="images/beard-4.png" alt="">
+											</figure>
+										</div>
 									</div>
 									<div>
-										<form>	
+										
 											<input type="radio" name="beard" value="sadge" id="sadge">
 											<label for="sadge"></label>
-										</form>
-										<figure>
-											<figcaption>мудрец</figcaption>
-											<img src="images/beard-5.png" alt="">
-										</figure>
+										
+										<div class="">
+											<figure>
+												<figcaption>мудрец</figcaption>
+												<img src="images/beard-5.png" alt="">
+											</figure>
+										</div>
 									</div>
-									<!-- <div class="label">
-										<p class="choose">aдмирал</p>
-										<p class="choose">лесоруб</p>
-										<p class="choose">полярник</p>
-										<p class="choose">боярин</p>
-										<p class="choose">мудрец</p>
-									</div> -->
-									
+																		
 								</div>
 							
 						</div>
