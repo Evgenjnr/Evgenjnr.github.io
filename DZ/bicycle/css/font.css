@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'DymaxionScript';
+    src: url('../fonts/DymaxionScript.eot');
+    src: url('../fonts/DymaxionScript.woff') format('woff'),
+     url('../fonts/DymaxionScript.ttf') format('truetype'),
+      url('../fonts/DymaxionScript.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'high_tidebold';
+    src: url('../fonts/high_tide_bold-webfont.woff2') format('woff2'),
+         url('../fonts/high_tide_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'high_tidesans';
+    src: url('../fonts/hightide_sans-webfont.woff2') format('woff2'),
+         url('../fonts/hightide_sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'high_tideregular';
+    src: url('../fonts/hightide-webfont.woff2') format('woff2'),
+         url('../fonts/hightide-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'odin_roundedbold';
+    src: url('../fonts/odin_rounded_-_bold-webfont.woff2') format('woff2'),
+         url('../fonts/odin_rounded_-_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'odin_roundedlight';
+    src: url('../fonts/odin_rounded_-_light-webfont.woff2') format('woff2'),
+         url('../fonts/odin_rounded_-_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'odin_roundedregular';
+    src: url('../fonts/odin_rounded_-_regular-webfont.woff2') format('woff2'),
+         url('../fonts/odin_rounded_-_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sans_condensedbold';
+    src: url('../fonts/opensanscondensed-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensanscondensed-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sans_condensedlight';
+    src: url('../fonts/opensanscondensed-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensanscondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sans_condensedLtIt';
+    src: url('../fonts/opensanscondensed-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/opensanscondensed-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
