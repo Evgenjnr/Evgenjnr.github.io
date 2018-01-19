@@ -34,31 +34,13 @@
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'odin_roundedbold';
-    src: url('../fonts/odin_rounded_-_bold-webfont.woff2') format('woff2'),
-         url('../fonts/odin_rounded_-_bold-webfont.woff') format('woff');
+    src: url('../fonts/Odin Rounded - Bold.otf');
+    src: url('../fonts/odin_rounded-bold.woff2') format('woff2'),
+         url('../fonts/odin_rounded-bold.woff') format('woff');
     font-weight: bold;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'odin_roundedlight';
-    src: url('../fonts/odin_rounded_-_light-webfont.woff2') format('woff2'),
-         url('../fonts/odin_rounded_-_light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'odin_roundedregular';
-    src: url('../fonts/odin_rounded_-_regular-webfont.woff2') format('woff2'),
-         url('../fonts/odin_rounded_-_regular-webfont.woff') format('woff');
-    font-weight: normal;
     font-style: normal;
 
 }

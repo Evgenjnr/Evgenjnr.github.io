@@ -135,13 +135,32 @@ html, body, .wrapper {
 	display: inline-block;
 }
 
-input, select {
+select {
 	border-top: none;
 	border-left: none;
 	border-right: none;
 }
-input:focus, select:focus {
-	border-top: none;
-	border-left: none;
-	border-right: none;
+input, select {
+	outline: 0;
+}
+
+ input:focus::placeholder { 
+	opacity: 0;
+}
+
+.list-flds:first-child {
+	position: relative;
+}
+
+input {
+	border-width: 0 0 2px 0;
+}
+
+input:focus {
+	border-color: #555fff;
+	-webkit-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	transform: scale(1, 1);
+	transition: transform, border-color 2s;
 }
