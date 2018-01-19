@@ -40,14 +40,14 @@ body {
 	text-align: right;
 }
 
-form {
+.head__form {
   position: relative;
   width: 300px;
   margin: 0 auto ;
   height: 42px;
 }
 
-input {
+.search {
   height: 42px;
   width: 0;
   padding: 0 42px 0 15px;
@@ -61,7 +61,7 @@ input {
   z-index: 99;
 }
 
-input:focus {
+.search:focus {
   width: 300px;
   z-index: 99;
   background-color: rgba(255, 255, 255, .5);
@@ -183,13 +183,20 @@ h2>span {
 .foot__page {
 	background-color: #595f6f;
 	padding: 35px 40px 35px 30px;
+	font-size: 0;
+
 }
 
-.foot__page-left, .foot__page-right {
-	width: 50%;
+.foot__page>div {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .foot__page-left {
+	width: 50%;
+}
+
+.foot__page>div:not(:last-child) {
 	border-right: 3px solid #4d5362;
 }
 
@@ -216,7 +223,7 @@ h2>span {
 	text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
-	padding: 35px 0;
+	padding: 20px 0;
 }
 
 .foot_bonus {
@@ -225,7 +232,7 @@ h2>span {
 	font-family: 'open_sans_condensedlight', sans-serif;
 	text-decoration:underline;
 	color: #fff;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 .fa {
 	text-decoration: underline;
@@ -234,4 +241,72 @@ h2>span {
 .foot__copyr {
 	font-family: 'open_sans_condensedbold', sans-serif;
 	font-size: 14px;
+	margin: 0;
+	padding: 0;
 }
+
+.foot__page-center {
+	width: 30%;
+	padding: 30px;
+}
+
+.foot__center-list {
+	margin: 0;
+	padding: 0;
+}
+
+.foot__center-list>li {
+	display: inline-block;
+	font-size: 0;
+	padding-left: 40px;
+	padding-bottom: 20px;
+	
+}
+
+.list__item-link {
+	display: inline-block;
+	width: 110px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-family: 'open_sans_condensedlight', sans-serif;
+	text-decoration: none;
+}
+
+.foot__page>div a:hover {
+	color: grey;
+}
+
+.foot__page-right {
+	width: 20%;
+}
+
+.list__right {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+label[for='.subscribe'] {
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'open_sans_condensedlight', sans-serif;
+}
+
+.subscribe {
+	width: 100%;
+	height: 70px;
+	background-color: rgba(128, 128, 128, .7);
+	border: none;
+	border-radius: 5px 5px;
+}
+
+.subscribe::-webkit-input-placeholder {color: gray;
+font-size:20px;}
+.subscribe::-moz-placeholder          {color: gray;
+	font-size:20px;}/* Firefox 19+ */
+.subscribe:-moz-placeholder           {color: gray;
+	font-size:20px;}/* Firefox 18- */
+.subscribe:-ms-input-placeholder      {color: gray;
+font-size:20px;}
