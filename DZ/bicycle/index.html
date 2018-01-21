@@ -2,20 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Bicycles</title>
+	<link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
 	<link rel="stylesheet" href="libs/normalize/normalize.css">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<div class="wraper">
 		<header class="head">
-			<div class="head__wrap">
+			<div class="head__wrap head__wrap-left">
 				<a href="#" class="head__logo">Bikees.</a>
 			</div>
-			<div class="head__wrap">
-				<form action="" class="head__form">
+			<div class="head__wrap head__wrap-right">
+				<form action="#" class="head__form">
 					<input type="text" class="search">
 					<button type="submit"></button>
 				</form>
@@ -25,7 +28,7 @@
 			<div class="content__left">
 				<div class="content__layer content__layer--left">
 					<div class="content__main">
-						<h2><span class="left">Fixies</span> Hisper style</h2>
+						<span class="left">Fixies</span> <p class="content__main-par">Hisper style</p>
 						<a href="#" class="content__buttn">Choisir son modèle</a>
 					</div>
 				</div>
@@ -33,67 +36,76 @@
 			<div class="content__right">
 				<div class="content__layer content__layer--right">
 					<div class="content__main content__main--right">
-						<h2><span class="right">Cruisers</span> Hisper style</h2>
+						<span class="right">Cruisers</span> <p class="content__main-par">Hisper style</p>
 						<a href="#" class="content__buttn">Choisir son modèle</a>
 					</div>
 				</div>
 			</div>
 		</section>
 		<footer class="foot__page">
-			<div class="foot__page-left">
-				<ul class="foot__list">
-					<li class="foot__item">
-						<a href="#" class="foot__logo">
-							Bikees.
-						</a>
-					</li>
-					<li class="foot__item">
-						<a href="#" class="foot__sec">
-							PAIEMENT 100% SECURISÉ - DONNÉES CRIPTÉES ET CHIFRÉES.
-						</a>
-					</li>
-					<li class="foot__item">
-						<a class="foot_bonus" href='#'>
-							Livraison gratuite a partir de 50<i class="fa fa-eur" aria-hidden="true"></i> d`achat
-						</a>
-					</li>
-					<li class="foot__item">
-						<p class='foot__copyr'>
-							&copy;BIKEES.2015
-						</p>
-					</li>
-				</ul>
-			</div>
-			<div class="foot__page-center">
-				<ul class="foot__center-list">
-					<li class="list__item"><a class="list__item-link" href="#">fixies</a></li>
-					<li class="list__item"><a class="list__item-link" href="#">mentios</a></li>
-					<li class="list__item"><a class="list__item-link" href="#">cruisers</a></li>
-					<li class="list__item"><a class="list__item-link" href="#">c.g.u</a></li>
-					<li class="list__item"><a class="list__item-link" href="#">accessoires</a></li>
-					<li class="list__item"><a class="list__item-link" href="#">contact</a></li>
-				</ul>
-			</div>
-			<div class="foot__page-right">
-				<ul class="list__right">
-					<li class="right__item">
-						<form action="" method="post" class="foot__form">
-							<label for=".subscribe">inscription newsletter</label>
-							<input type="email" class="subscribe" placeholder="  Saisissez votre adresse mail">
-						</form>
-					</li>
-					<li class="right__item">
-						<a href="https://twitter.com" class="soc__link" target="_blank">
-							<span class="right__item-tw social"></span>
-						</a>
-						<a href="https://plus.google.com" class="soc__link" target="_blank">
-							<span class="right__item-gplus social"></span>
-						</a>
-						<a href="https://facebook.com" class="soc__link" target="_blank">
-							<span class="right__item-fb social"></span>
-						</a>
-					</li>
-				</ul>
+			<div class="foot__page-wrap">
+				<div class="foot__page-left">
+					<ul class="foot__list">
+						<li class="foot__item">
+							<a href="#" class="foot__logo">
+								Bikees.
+							</a>
+						</li>
+						<li class="foot__item">
+							<a href="#" class="foot__sec">
+								PAIEMENT 100% SECURISÉ - DONNÉES CRIPTÉES ET CHIFRÉES.
+							</a>
+						</li>
+						<li class="foot__item">
+							<a class="foot_bonus" href='#'>
+								Livraison gratuite a partir de 50<i class="fa fa-eur" aria-hidden="true"></i> d`achat
+							</a>
+						</li>
+						<li class="foot__item">
+							<p class='foot__copyr'>
+								&copy;BIKEES.2015
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="foot__page-center">
+				
+					<div class="foot__list-container">
+						<ul class="foot__center-list">
+							<li class="list__item"><a class="list__item-link" href="#">fixies</a></li>
+							<li class="list__item"><a class="list__item-link" href="#">cruisers</a></li>
+							<li class="list__item"><a class="list__item-link" href="#">accessoires</a></li>
+						</ul>
+					</div>
+					<div class="foot__list-container">
+						<ul class="foot__center-list">
+							<li class="list__item"><a class="list__item-link" href="#">mentios</a></li>
+							<li class="list__item"><a class="list__item-link" href="#">c.g.u</a></li>
+							<li class="list__item"><a class="list__item-link" href="#">contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="foot__page-right">
+					<ul class="list__right">
+						<li class="right__item">
+							<form action="#" method="post" class="foot__form">
+								<label for=".subscribe">inscription newsletter</label>
+								<input type="email" class="subscribe" placeholder="  Saisissez votre adresse mail">
+							</form>
+						</li>
+						<li class="right__item">
+							<a href="https://twitter.com" class="soc__link" target="_blank">
+								<span class="right__item-tw social"></span>
+							</a>
+							<a href="https://plus.google.com" class="soc__link" target="_blank">
+								<span class="right__item-gplus social"></span>
+							</a>
+							<a href="https://facebook.com" class="soc__link" target="_blank">
+								<span class="right__item-fb social"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</footer>
 	</div>
