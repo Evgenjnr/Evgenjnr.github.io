@@ -15,7 +15,7 @@ body {
 .wrapper {
 	background-color: #3399cc;
 	border: 18px solid #2b81ac;
-	height: 100%;
+	min-height: 100%;
 	padding-top: 3%;
 	position: relative;
 
@@ -27,10 +27,10 @@ body {
 	/*height: 566px;*/
 	margin:  auto;
 	top: 50%;
-	/*left: 0;
-	bottom: 0;
+	left: 50%;
+	/*bottom: 0;
 	right: 0;*/
-	transform: translateY(-50%);
+	transform: translate(-50% -50%);
 }
 
 .header {
