@@ -16,7 +16,7 @@ body {
 	background-color: #3399cc;
 	border: 18px solid #2b81ac;
 	min-height: 100%;
-	padding-top: 3%;
+	/*padding-top: 3%;*/
 	position: relative;
 
 }
@@ -30,7 +30,7 @@ body {
 	left: 50%;
 	/*bottom: 0;
 	right: 0;*/
-	/*transform: translateX(-50%);*/
+	transform: translateX(-50%);
 	transform: translateY(-50%);
 }
 
