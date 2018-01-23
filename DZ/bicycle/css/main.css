@@ -1,10 +1,12 @@
 *{
 	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 html, body {
 	margin: 0;
 	padding: 0;
+	
 }
 
 body {
@@ -22,7 +24,7 @@ body {
 .head>div {
 	display: inline-block;
 	width: 50%;
-	padding:  1.83% 2.92% 2.083% 2.083%;
+	padding:  1.83% /*2.92% 2.083% 2.083%*/;
 	vertical-align: middle;
 }
 
@@ -30,6 +32,7 @@ body {
 	display: inline-block;
 	font-family: 'Dosis', sans-serif;
 	font-size: 5vw;
+	font-size: 35px;
 	color: #fff;
 	text-decoration: none;
 	width: 140px;
@@ -96,19 +99,28 @@ button:before {
 }
 
 
-.content {
-	width: 100%;
+/* .content {
+	width: 50%;
+	font-size: 0;
+} */
+
+main {
 	font-size: 0;
 }
 
-.content>div {
+main>.content {
 	display: inline-block;
 	width: 50%;
 	height: 100vh;
 	font-size: 1rem;
 	vertical-align: top;
-	position: relative;
 	
+}
+
+.content>div {
+	width: 100%;
+	font-size: 1rem;
+	height: 100%;
 }
 
 .content__left {
@@ -127,7 +139,6 @@ button:before {
 }
 
 .content__layer {
-	position: absolute;
 	width: 100%;
 	height: 100%;
 	padding-top: 12vw;
@@ -139,6 +150,7 @@ button:before {
 
 .content__layer--right {
 	background: linear-gradient(to bottom, #9900cc 0%, transparent 100%);
+	background: -webkit-linear-gradient(to bottom, #9900cc 0%, transparent 100%);
 }
 
 .content__main {
