@@ -311,8 +311,8 @@ main>.content {
 	text-align: center;
 }
 
-label[for='.subscribe'] {
-	font-size: 1.56rem;
+.subsc-label {
+	font-size: 18px;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'open_sans_condensedlight', sans-serif;

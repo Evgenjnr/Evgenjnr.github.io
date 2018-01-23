@@ -66,7 +66,7 @@
 	display elements
 	**
 	 */
-	 .content>div, .foot__page-wrap, .foot__page-wrap>div, .foot__page-center>div {
+	 main>.content, .content>div, .foot__page-wrap, .foot__page-wrap>div, .foot__page-center>div {
 	 	display: block;
 	 }
 
@@ -83,11 +83,11 @@
 	  height, width
 	  **
 	   */
-	.head, .content>div, .foot__page-wrap>div {
+	.head, main>.content, .foot__page-wrap>div {
 		width: 100%;
 	}
 
-	.content>div {
+	main>.content {
 		height: 50vh;
 	}
 
