@@ -1,0 +1,71 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	flex-direction: ;
+	justify-content: space-between ;/*flex-end flex-start(default) center space-between space-around*/
+	align-items: center;
+	width: 700px;
+	height: 400px;
+	margin: 0 auto;
+	border: 3px solid #f55f;
+}
+
+.flex-item {
+	/* width: 50px; */
+	flex-grow: ;/*одинаковое соотношение размеров элементов при "1"*/
+	height: 75px;
+	border: 3px solid #020202;
+	margin: 10px;
+}
+
+.first {
+	flex-grow: 1;
+}
+
+.second {
+	flex-grow: 2;
+}
+
+.third {
+	flex-grow: 3;
+}
+
+body {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	-moz-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	-o-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+main {
+	flex: 1 0 auto;
+}
