@@ -1,0 +1,37 @@
+
+
+
+
+@import 'app/sass/smart-grid.scss';
+@import 'app/sass/_mixins';
+
+
+$font_family: 'Poppins' , 'Roboto', sans-serif , 'FontAwesome';
+
+
+* ,
+*:before ,
+*:after {
+	box-sizing: border-box; 
+}
+
+
+body {
+	@include reset();
+	font: 16px/18px $font_family;
+	background-color: white;
+	margin: 0;
+	display: flex;
+    flex-flow: column nowrap;
+}
+
+
+.container {
+	@include wrapper();
+}
+
+.main {
+	 flex: 1 0 auto;
+}
+
+

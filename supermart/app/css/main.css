@@ -1,0 +1,80 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font: 16px/18px "Poppins", "Roboto", sans-serif, "FontAwesome";
+  background-color: white;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+  body body, body div, body dl, body dt, body dd, body ul, body li, body h1, body h2, body h3, body h4, body h5, body h6, body pre, body code, body form, body fieldset, body input, body textarea, body p, body blockquote, body th, body td {
+    margin: 0;
+    padding: 0; }
+  body table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  body fieldset, body img, body abbr {
+    border: 0; }
+  body address, body caption, body cite, body code, body dfn, body em, body strong, body th, body var {
+    font-style: normal;
+    font-weight: normal; }
+  body ul li {
+    list-style: none; }
+  body caption, body th {
+    text-align: left; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-size: 100%;
+    font-weight: normal; }
+  body sup {
+    vertical-align: text-top; }
+  body sub {
+    vertical-align: text-bottom; }
+  body input, body textarea, body select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit; }
+  body legend {
+    color: #000; }
+  body article, body aside, body details, body figcaption, body figure, body footer, body header, body hgroup, body menu, body nav, body section, body main {
+    display: block; }
+  body img {
+    max-width: 100%;
+    height: auto; }
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px; }
+  @media screen and (max-width: 1230px) {
+    .container {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media screen and (max-width: 992px) {
+    .container {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media screen and (max-width: 768px) {
+    .container {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media screen and (max-width: 576px) {
+    .container {
+      padding-left: 30px;
+      padding-right: 30px; } }
+
+.main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
