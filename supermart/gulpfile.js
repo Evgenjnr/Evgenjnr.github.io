@@ -14,6 +14,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
     plumber = require('gulp-plumber'),
     smartgrid = require('smart-grid'),
     rigger = require('gulp-rigger'),
+    gcmq = require('gulp-group-css-media-queries'),
     gulpSassError = require('gulp-sass-error');
 
     
@@ -29,8 +30,9 @@ gulp.task('sass', function(){ // Создаем таск Sass
                 }
             })
         )
+        
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
-
+        .pipe(gcmq())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
@@ -49,7 +51,9 @@ gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
         'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
         'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Берем Magnific Popup
-        'app/libs/swiper/dist/js/swiper.min.js'
+        'app/libs/swiper/dist/js/swiper.min.js',//slider///
+        'app/libs/PgwSlideshow/pgwslideshow.min.js',////slider slideshow//
+        'app/libs/owl-slider/owl.carousel.js'////owl-slider//      
         
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js

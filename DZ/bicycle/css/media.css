@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 460px) {
 
 	ul {
 		padding: 0;
@@ -174,10 +174,52 @@
 	 */
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-	main>.content{
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+	main>.content {
+	display: block;
+	width: 100%;
+	height: 100vh;
+}
+	.foot__page-wrap>div {
 		display: block;
 		width: 100%;
-		height: 100vh;
+		text-align: center;
 	}
+
+	ul {
+		padding: 0;
+		list-style: none;
+	}
+	.foot__sec {
+		font-size: 4vw;
+	}
+
+	.foot_bonus {
+		font-size: 5vw;
+	}
+
+	.foot__copyr {
+		font-size: 3vw;
+	}
+
+	.list__item-link {
+		font-size: 4vw;
+		letter-spacing: 2px;
+	}
+
+	label[for='.subscribe'] {
+		font-size: 5vw;
+	}
+
+	.foot__page-wrap>div:not(:last-child) {
+	border-bottom: 3px solid #4d5362;
+}	
+	
+	.content>div, .foot__page-wrap>div {
+		border: none;
+	}
+	.subscribe::placeholder {
+		text-align: center;
+	}
+
 }

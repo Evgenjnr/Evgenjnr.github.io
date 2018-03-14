@@ -33,7 +33,7 @@ body {
 	-o-flex-direction: column;
 	flex-direction: column;
 	width: 100%;
-	height: 100%;
+	
 }
 
 .header {
@@ -153,31 +153,25 @@ body {
 .submenu__item__link:hover, .embedded__list__item__link:hover {
 	background-color: lightgray;
 }
+
 .title {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	-moz-flex-direction: column;
-	-ms-flex-direction: column;
-	-o-flex-direction: column;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-top: 61px;
 	width: 100%;
-	height: 80vh;
-	text-align: center;
+	background-color: #333ecc;
 	position: relative;
-	z-index: -1;
-	overflow: hidden;
-	background-image: url('../source/image/425116691_151779.jpeg');
-	background-position: center;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
+	z-index: -3;
+}
+
+.spacer {
+	padding-top: 56.25%;
+	height: 0;
+}
+
+.bgvideo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
 }
 
 h1 {
@@ -188,9 +182,6 @@ h1 {
 	text-transform: uppercase;
 }
 
-.title {
-	
-}
 
 .title>p {
 	color: #fff;
@@ -200,16 +191,7 @@ h1 {
 	text-transform: uppercase;
 }
 
-.bgvideo {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	top: 0;
-	z-index: -1;
-}
+
 .content {
 	width: 100%;
 	
