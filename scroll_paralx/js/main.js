@@ -33,7 +33,11 @@ $(window).on('resize load', function() {
 		let y = ev.pageY;
 		console.log(x);
 		console.log(y);
-		$('.bgimg').css({top :`${(-x /100)}px`, left:`${(-y /100)}px`});
+		$('.bgimg').css({left :`${-(x /100)}px`});
+	});
+	$('body').mouseleave(function(){
+		
+		$('.bgimg').css({left :`0px`});
 	});
 		
 	
