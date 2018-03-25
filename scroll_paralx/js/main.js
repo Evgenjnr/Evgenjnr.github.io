@@ -1,6 +1,10 @@
+$(function(){
+	let viewport 	    = $('.viewport');
+	let container 	    = $('.container');
+
 $(window).on('resize load', function() {
-	let viewportHeight 	= $('.viewport').innerHeight();
-	let contentHeight 	= $('.container').innerHeight();
+	let viewportHeight 	= viewport.innerHeight();
+	let contentHeight 	= container.innerHeight();
 	let multiplier      = (viewportHeight *100)/contentHeight;
 	
 
@@ -18,16 +22,16 @@ $(window).on('resize load', function() {
 		$('.scrlbr').height(((viewportHeight * multiplier)/100)-2);
 	}
 	let scrHght = $('.scrlbr').height();
-	console.log(scrHght);
+	console.log('высота бегунка' + ' ' + scrHght);
 
 
 		
 	$('.viewport').scroll(function(){
 		    let i 	= $(this).scrollTop();
-			console.log(i);
+			console.log('scrollTop' + ' ' + i);
 			$('.scrlbr').css({transform:`translateY(${(i * multiplier)/100}px)`});
 	});
-
+});
 	$('body').mousemove(function(ev){
 		let x = ev.pageX;
 		let y = ev.pageY;
