@@ -24,6 +24,7 @@ body{
 }
 .bgimg{
 	background: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/1920x1080-Galaxy-Space-Wallpapers.jpg');
+	background-position: center;
 	position: absolute;
 	width: 100%;
 	height: 100%;
