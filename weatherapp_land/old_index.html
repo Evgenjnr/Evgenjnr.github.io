@@ -1,59 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
 	<meta charset="UTF-8">
 	<title>Fun Weather.</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+	
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel='stylesheet' media='screen and (min-width: 1280px) and (max-width: 1320px)' href='styles/min_1280.css' />
-	<link rel='stylesheet' media='screen and (min-width: 1024px) and (max-width: 1279px)' href='styles/min_1024.css' />
-	<link rel='stylesheet' media='screen and (min-width: 980px) and (max-width: 1023px)' href='styles/min_980.css' />
-	<link rel='stylesheet' media='screen and (min-width: 810px) and (max-width: 979px)' href='styles/min_860.css' />
-	<link rel='stylesheet' media='screen and (max-width: 639px)' href='styles/max_640.css' />
+	<link rel='stylesheet' media='screen and (min-width: 1024px)' href='styles/min_1024.css' />
+
+	<link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
-	<header class="main_header">
-		<nav class="nav_header wrapper">
-			<span class="logo">Fun Weather.</span>
-			<ul class="nav_list">
-				<li class="nav_item"><a href="#">Home</a></li>
-				<li class="nav_item"><a href="#">Features</a></li>
-				<li class="nav_item"><a href="#">Reviews</a></li>
-				<li class="nav_item"><a href="#">download</a></li>
+	<header class="main_header main_container">
+		<nav class="main_header__nav wrapper">
+			<span class="logo_title">Fun Weather.</span>
+			<ul class="header_nav">
+				<li class="header_nav__item">
+					<a class="header_nav__link active--link" href="#">Home</a></li>
+				<li class="header_nav__item">
+					<a class="header_nav__link" href="">Features</a></li>
+				<li class="header_nav__item">
+					<a class="header_nav__link" href="">Reviews</a></li>
+				<li class="header_nav__item">
+					<a class="header_nav__link" href="">download</a></li>
 			</ul>
-			<ul class="social_list">
-				<li class="social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-				<li class="social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-				<li class="social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+			<ul class="header_social__list">
+				<li><a href="https://www.facebook.com" class="header_social__link">
+						
+					</a>
+				</li>
+				<li><a href="https://www.instagram.com" class="header_social__link">
+						
+					</a>
+				</li>
+				<li><a href="https://www.twitter.com" class="header_social__link">
+						
+					</a>
+				</li>
 			</ul>
 			<span class="bar_menu"><i class="fas fa-bars"></i></span>
 		</nav>
+
 	</header>
-	<main>
-		<section class="bg_section wrapper">
-			<ul class="section__list">
-				<li class="section__item">
-					<h2>Get the most fun  weather app</h2>
-					<span class="descr">
-						Simple, nice and user-friendly application of the weather. Only useful information.
+	<main class="main_content main_container">
+		<div class="bg_wrapper">
+			<section class="screen_section wrapper">
+				<div class="left">
+					<div class="wrap">
+						<h2>Get the most fun  weather app</h2>
+						<span class="descr">Simple, nice and user-friendly application of the weather. Only useful information.
+						</span>
+						<div class="btn_wrap">
+							<button class="btn btn-dwld">dowload</button>
+							<button class="btn btn-ftrs">features</button>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="screen_device device">
+						<img src="image/top_screen_circles.png" alt="">
+					</div>
+				</div>
+				<div class="nav-to-bottom">
+					<span>
+						<i class="fas fa-angle-down"></i>
 					</span>
-					<div class="btn_wrap">
-						<button class="btn bnt_dwnld">dowload</button>
-						<button class="btn bnt_features">features</button>
-					</div>
-				</li>
-				<li class="section__item">
-					<div class="img_wrap img_wrap__top-scr">
-						<img src="image/top_screen_circles.png" alt="top_screen">
-					</div>
-				</li>
-			</ul>
-			<div class="btn_to_dwn"><span class="btn_dwn"><i class="fas fa-angle-down"></i></span></div>
-		</section>
+				</div>
+			</section>
+		</div>
 		<section class="features wrapper">
 			<div class="title-section">
 				<h2 class="title">Perfect Features</h2>
@@ -111,7 +125,8 @@
 				<li class="odd">
 					<div class="screenshoot-img">
 				        <div class="img-container device">
-				          <img src="image/cloudy_circle.png" alt="">
+				          <img src="image/cloudy circle.png" alt="">
+					      <span class="bg-descr bg-descr-cloudy">cloudy</span>
 				        </div>
 			        </div>
 			        <div class="screenshoot-descr">
@@ -128,7 +143,8 @@
 				<li class="even">
 					<div class="screenshoot-img">
 				       <div class="img-container device">
-					   <img src="image/sunny_cicle.png" alt="">
+					   <img src="image/sunny cicle.png" alt="">
+					   <span class="bg-descr bg-descr-sunny">sunny</span>
 				       </div>
 			        </div>
 			        <div class="screenshoot-descr">
@@ -145,7 +161,10 @@
 				<li class="odd">
 					<div class="screenshoot-img">
 				      <div class="img-container device">
+					  <!-- <span class="deg deg-rainy">9˚</span>
+					  <span class="name name-sunny">rainy</span> -->
 					  <img src="image/rainy_circle.png" alt="">
+					  <span class="bg-descr bg-descr-rainy">rainy</span>
 				      </div>
 			        </div>
 			        <div class="screenshoot-descr">
@@ -220,58 +239,59 @@
 				</li>
 			</ul>
 		</section>
-		<section class="download wrapper">
-			<ul class="section__list">
-				<li class="section__item">
-					<h2>How Download the app?</h2>
-					<span class="descr">
-						Just download the app from the store. Simple, nice and user-friendly application of the weather. Only relevant and usefull information.
-					</span>
-					<div class="btn_wrap">
-						<button class="btn btn_appl">
-							<a href="https://www.apple.com/ios/app-store/"></a>
-						</button>
-						<button class="btn btn_ggl">
-							<a href="https://play.google.com/"></a>
-						</button>
-					</div>
-				</li>
-				<li class="section__item">
-					<div class="img_wrap dwnld_sectn">
-						<img src="image/SCREEN_cloudy.png" alt="top_screen">
-						<img src="image/SCREEN_sunny.png" alt="top_screen">
-						<img src="image/SCREEN_rain.png" alt="top_screen">
-					</div>
-				</li>
-			</ul>
-		</section>
 	</main>
+	<div class="download">
+		<div class="download_wrap wrapper">
+			<div class="left">
+					<div class="wrap">
+						<h2>How Download the app?</h2>
+						<span class="descr">Just download the app from the store. Simple, nice and user-friendly application of the weather. Only relevant and usefull information.</span>
+						<div class="btn_wrap">
+							<button class="btn_dwld btn-appStore"><a href="https://www.apple.com/ios/app-store/"></a></button>
+							<button class="btn_dwld btn-googlPlay"><a href="https://play.google.com/"></a></button>
+						</div>
+					</div>
+				
+			</div>
+			<div class="right_img">
+				<div class="bttm_first_el device">
+					<img src="image/SCREEN_cloudy.png" alt="">
+				</div>
+				<div class="bttm_second_el device">
+					<img src="image/SCREEN_sunny.png" alt="">
+				</div>
+				<div class="bttm_third_el device">
+					<img src="image/SCREEN_rain.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
 	<footer class="main_footer">
-		<nav class="nav_header wrapper offset_footer">
+		<nav class="main_header__nav wrapper offset_footer">
 			<span class="logo_title"><span class="red">Fun</span><span class="blue"> Weather.</span></span>
-			<ul class="nav_list" id ='show-footer'>
-				<li class="nav_item">
-					<a ctive--link" href="#">Home</a></li>
-				<li class="nav_item">
-					<a href="">Features</a></li>
-				<li class="nav_item">
-					<a href="">Reviews</a></li>
-				<li class="nav_item">
-					<a href="">download</a></li>
+			<ul class="header_nav" id ='show-footer'>
+				<li class="header_nav__item">
+					<a class="footer_nav__link active--link" href="#">Home</a></li>
+				<li class="header_nav__item">
+					<a class="footer_nav__link" href="">Features</a></li>
+				<li class="header_nav__item">
+					<a class="footer_nav__link" href="">Reviews</a></li>
+				<li class="header_nav__item">
+					<a class="footer_nav__link" href="">download</a></li>
 			</ul>
-			<ul class="social_list">
-				<li class="social_item">
-					<a href="https://www.facebook.com">
+			<ul class="header_social__list">
+				<li class="footer_social__item">
+					<a href="https://www.facebook.com" class="footer_social__link header_social__link">
 						<i class="fab fa-facebook-f"></i>
 					</a>
 				</li>
-				<li class="social_item">
-					<a href="https://www.instagram.com">
+				<li class="footer_social__item">
+					<a href="https://www.instagram.com" class="footer_social__link header_social__link">
 						<i class="fab fa-instagram"></i>
 					</a>
-				</li class="social_item">
+				</li class="footer_social__item">
 				<li>
-					<a href="https://www.twitter.com">
+					<a href="https://www.twitter.com" class="footer_social__link header_social__link">
 						<i class="fab fa-twitter"></i>
 					</a>
 				</li>

@@ -1,0 +1,42 @@
+/* **start header section** */
+.nav_header{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.logo{
+	font-size: 1.1em;
+}
+/* **end header section** */
+/* **start top section** */
+.section__item{
+	width: 50%;
+	-webkit-flex: 1 0;
+	-moz-flex: 1 0;
+	-ms-flex: 1 0;
+	-o-flex: 1 0;
+	flex: 1 0;
+}
+.section__item h2{
+	font-size: 2em;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+.section__item .descr{
+	font-size: 1em;
+	line-height: 30px;
+	padding-right: 0;
+	margin-bottom: 30px;
+}
+.img_wrap__top-scr{
+	padding: 0;
+}
+.btn_dwn{
+	margin-bottom: 30px;
+}
+.btn_wrap{
+	width: 80%;
+}
+
+
+
+/* **end top section** */

@@ -1,0 +1,34 @@
+/* **start header section** */
+.logo{
+	font-size: 1.23em;
+}
+/* **end header section** */
+/* **start top section** */
+.section__item{
+	width: 50%;
+	-webkit-flex: 1 0;
+	-moz-flex: 1 0;
+	-ms-flex: 1 0;
+	-o-flex: 1 0;
+	flex: 1 0;
+}
+.section__item h2{
+	font-size: 2.3em;
+	margin-bottom: 45px;
+}
+.section__item .descr{
+	font-size: 1.2em;
+	line-height: 30px;
+	padding-right: 0;
+	margin-bottom: 45px;
+}
+.img_wrap__top-scr{
+	padding: 0;
+}
+.btn_wrap{
+	width: 100%;
+}
+
+
+
+/* **end top section** */

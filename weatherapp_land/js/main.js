@@ -20,11 +20,11 @@ function init () {
 	
 		
 	menuBtn.addEventListener('click', function () {
-		let menuList = document.querySelector('.header_nav');
-		if(menuList.classList.contains('show--list')){
-		   menuList.classList.remove('show--list');
+		let menuList = document.querySelector('.nav_list');
+		if(menuList.classList.contains('nav_list--show')){
+		   menuList.classList.remove('nav_list--show');
 		}else{
-		   menuList.classList.add('show--list');
+		   menuList.classList.add('nav_list--show');
 		}
 		
 	});
