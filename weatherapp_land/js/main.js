@@ -16,7 +16,9 @@ function init () {
 	}
 
 	window.addEventListener('load', setPadding);
-	window.addEventListener('resize', setPadding);	
+	window.addEventListener('resize', setPadding);
+	
+	
 		
 	menuBtn.addEventListener('click', function () {
 		let menuList = document.querySelector('.nav_list');
@@ -33,30 +35,29 @@ function init () {
 			let targetAttr = this.getAttribute('data-name');
 			for (let showElm of sectionElmn) {
 				if(showElm.getAttribute('data-name') == targetAttr){
-				let paddTop = getComputedStyle(mainHeader).height;
-				showElm.style.paddingTop = paddTop;
+				setPaddingTop (mainHeader, showElm);
 				showElm.scrollIntoView({behavior: 'smooth'});
 				}
 			}
 		});
 	}
 
-	btnDownLd.addEventListener('click', function () {
-		let actionElm = document.querySelector('.download');
-		let paddTop = getComputedStyle(mainHeader).height;
-		actionElm.style.paddingTop = paddTop;
+	function setPaddingTop (mainElm, targElm) {
+		let paddTop = getComputedStyle(mainElm).height;
+		targElm.style.paddingTop = paddTop;
+	}
+
+	function scrllElmnt (elm1, elm2) {
+		elm1.addEventListener('click', function () {
+		let actionElm = document.querySelector(elm2);
+		setPaddingTop (mainHeader, actionElm);
 		actionElm.scrollIntoView({behavior: 'smooth'});
-	});
-	btnFeature.addEventListener('click', function () {
-		let actionElm = document.querySelector('.features');
-		let paddTop = getComputedStyle(mainHeader).height;
-		actionElm.style.paddingTop = paddTop;
-		actionElm.scrollIntoView({behavior: 'smooth'});
-	});
-	btnToDown.addEventListener('click', function () {
-		let actionElm = document.querySelector('.widjet');
-		let paddTop = getComputedStyle(mainHeader).height;
-		actionElm.style.paddingTop = paddTop;
-		actionElm.scrollIntoView({behavior: 'smooth'});
-	});	
+		});
+	}
+
+	scrllElmnt(btnDownLd, '.download');
+	scrllElmnt(btnFeature, '.features');
+	scrllElmnt(btnToDown, '.widjet');
+	
+	
 }
