@@ -16,9 +16,7 @@ function init () {
 	}
 
 	window.addEventListener('load', setPadding);
-	window.addEventListener('resize', setPadding);
-	
-	
+	window.addEventListener('resize', setPadding);	
 		
 	menuBtn.addEventListener('click', function () {
 		let menuList = document.querySelector('.nav_list');
@@ -43,7 +41,6 @@ function init () {
 		});
 	}
 
-
 	btnDownLd.addEventListener('click', function () {
 		let actionElm = document.querySelector('.download');
 		let paddTop = getComputedStyle(mainHeader).height;
@@ -61,7 +58,5 @@ function init () {
 		let paddTop = getComputedStyle(mainHeader).height;
 		actionElm.style.paddingTop = paddTop;
 		actionElm.scrollIntoView({behavior: 'smooth'});
-	});
-	
-	
+	});	
 }
