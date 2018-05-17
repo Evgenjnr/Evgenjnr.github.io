@@ -185,6 +185,7 @@ li a{
 	display: flex;
 	height: 60px;
 	width: 60px;
+	border: none;
 	border-radius: 50%;
 	background: #fff;
 	color: #f00;
@@ -213,6 +214,7 @@ li a{
 	font-weight: 400;
 	font-size: 18px;
 	color: rgba(0, 0, 0, .7);
+	margin-bottom: 120px;
 }
 .features-list-item{
 	display: -webkit-flex;
@@ -225,6 +227,7 @@ li a{
 	-ms-flex-flow: row nowrap;
 	-o-flex-flow: row nowrap;
 	flex-flow: row nowrap;
+	padding-bottom: 50px;
 }
 
 
@@ -504,6 +507,7 @@ li a{
 	-o-flex-flow: row wrap;
 	flex-flow: row wrap;
 	justify-content: space-between;
+	margin-bottom: 70px;
 }
 .reviews-list-item{
 	display: -webkit-flex;
