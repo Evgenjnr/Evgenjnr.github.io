@@ -97,17 +97,19 @@ header{
 .social_list{
 	justify-content: space-around;
 }
-.nav_item{
+.nav_item a{
 	text-transform: capitalize;
+	color: rgba(255, 255, 255, .7);
+	font-size: 18px;
+	font-weight: 400;
 }
 .logo{
 	text-transform: uppercase;
 	font-size: 1.5em;
 	font-weight: 700;
 }
-li a{
-	font-size: 18px;
-	font-weight: 400;
+.nav_item .active--item{
+	color: rgba(255, 255, 255, 1.0);
 }
 .bar_menu{
 	display: none;
@@ -550,17 +552,30 @@ cite{
 	background: #6ca3ff;
 	overflow-y: hidden;
 }
+.download.wrapper{
+	padding-right: 0;
+}
 .dwnld_sectn{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	-webkit-flex-flow: row nowrap;
-	-moz-flex-flow: row nowrap;
-	-ms-flex-flow: row nowrap;
-	-o-flex-flow: row nowrap;
-	flex-flow: row nowrap;
+	overflow-y: hidden;
+}
+.dwnld_sectn img{
+	
+}
+.dwnld_sectn img:nth-child(odd){
+	transform: translateY(300px);
+}
+.dwnld_sectn img:nth-child(even){
+	transform: translate(-28%, 200px);
+	z-index: 1;
+
+}
+.dwnld_sectn img:last-child{
+	transform: translate(-60%, 300px);
 }
 .btn_appl{
 	background: url('../image/appstore.png') center no-repeat;
