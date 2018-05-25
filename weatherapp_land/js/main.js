@@ -16,8 +16,8 @@ function init () {
 	}
 	let setColor = function(){
 		for (let showElm of sectionElmn) {
-				if(showElm.getBoundingClientRect().top < 600 
-					&& showElm.getBoundingClientRect().top >= 0){
+				if(showElm.getBoundingClientRect().top >= 0 
+					&& showElm.getBoundingClientRect().top < 600){
 					let sectionInView = showElm.getAttribute('data-name');
 				  for(let target of navItem){				  	
 				  	if(target.getAttribute('data-name') == sectionInView){
@@ -36,8 +36,6 @@ function init () {
 	window.addEventListener('resize', setPadding);
 	window.addEventListener('scroll', setColor);
 	
-
-
 	// hide/show navMenu in header for mobile	
 	menuBtn.addEventListener('click', function () {
 		let menuList = document.querySelector('.nav_list');
@@ -63,7 +61,7 @@ function init () {
 function viewSectionOnBttn(par1){
 		for(let target of par1){
 			target.addEventListener('click', function(ev){
-							ev.preventDefault();
+							// ev.preventDefault();
 				let targetAttr = this.getAttribute('data-name');
 				for (let showElm of sectionElmn) {
 					if(showElm.getAttribute('data-name') == targetAttr){
@@ -80,6 +78,7 @@ function viewSectionOnBttn(par1){
 			target.addEventListener('click', function(ev){
 							ev.preventDefault();
 				let siblings = this.parentNode.children;
+				console.log(target);
 				for(let item of siblings){
 					if(item.firstChild.classList.contains('active--item')){
 						item.firstChild.classList.remove('active--item');
@@ -90,8 +89,12 @@ function viewSectionOnBttn(par1){
 				let targetAttr = this.getAttribute('data-name');
 				for (let showElm of sectionElmn) {
 					if(showElm.getAttribute('data-name') == targetAttr){
-					showElm.scrollIntoView({behavior: 'smooth'});
+					showElm.scrollIntoView({behavior:'smooth'});
 					}
+				}
+				if(window.matchMedia('screen and (max-width: 620px) and (orientation: portrait)').matches){
+					this.parentNode.classList.remove('nav_list--show');
+					
 				}
 				
 			});

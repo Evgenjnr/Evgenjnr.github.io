@@ -13,6 +13,7 @@ html, body{
 	font-family: 'Ubuntu', sans-serif;
 	/* font-size: 16px; */
 }
+
 header, nav, main, section, footer{
 	display: block;
 	width: 100%;
@@ -117,16 +118,31 @@ header{
 /* **end header section** */
 /* **start top section** */
 
+
 .bg_section{
 	background: url('../image/bg.png') center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+.section__list{
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
 .section__item:first-child{
 	width: calc((100% / 12) * 5);
 }
+.section__item:nth-child(2){
+	width: calc((100% / 12) * 7);
+}
+
+.section__item.view_down{
+	width: 100%;
+}
 .section__item h2{
-	font-size: 3.5em;
+	font-size: 3em;
 	margin: 43% 0 10%;
 	color: #fff;
 	font-weight: 700;
@@ -153,7 +169,7 @@ header{
 }
 .btn{
 	width: calc(50% - 10px);
-	min-height: 52px;
+	height: 52px;
 	border: none;
 	border-radius: 5px;
 	text-transform: capitalize;
@@ -168,8 +184,7 @@ header{
 	background: #4466c9;
 }
 .img_wrap__top-scr{
-	margin-top: 17%;
-	padding-left: 50px;
+	margin-top: 15%;
 }
 .btn_to_dwn{
 	display: -webkit-flex;
@@ -177,6 +192,11 @@ header{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-moz-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	-o-flex-flow: row nowrap;
+	flex-flow: row nowrap;
 	justify-content: center;
 }
 .btn_dwn{
@@ -216,8 +236,9 @@ header{
 	font-weight: 400;
 	font-size: 18px;
 	color: rgba(0, 0, 0, .7);
-	margin-bottom: 120px;
+	margin-bottom: 90px;
 }
+
 .features-list-item{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -377,6 +398,7 @@ header{
 	-ms-flex-flow: column nowrap;
 	-o-flex-flow: column nowrap;
 	flex-flow: column nowrap;
+	margin-bottom: 25px;
 }
 .screenshoot_list{
 	-webkit-flex-flow: column nowrap;
@@ -550,10 +572,22 @@ cite{
 /* **start download section** */
 .download{
 	background: #6ca3ff;
-	overflow-y: hidden;
+	overflow: hidden;
 }
 .download.wrapper{
 	padding-right: 0;
+}
+.section__item.item_download{
+	width: calc((100% / 12) * 6);
+}
+.section__item h2.download_header{
+	text-transform: uppercase;
+	font-size: 2.5em;
+	margin: 5% 0 5%;
+}
+.descr.download_descr{
+	padding-right: calc((100% / 12) * 3 + 90px);
+	margin-bottom: 5%;
 }
 .dwnld_sectn{
 	display: -webkit-flex;
@@ -561,27 +595,48 @@ cite{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	overflow-y: hidden;
+	overflow: hidden;
+	position: relative;
+	height: 100%;
 }
 .dwnld_sectn img{
-	
+	position: absolute;
 }
+
 .dwnld_sectn img:nth-child(odd){
-	transform: translateY(300px);
+	/* transform: translateY(160px); */
+	top: 80px;
+	filter: blur(3px);
 }
 .dwnld_sectn img:nth-child(even){
-	transform: translate(-28%, 200px);
+	/* transform: translateX(-28%); */
+	top: 0px;
+	left: 34%;
 	z-index: 1;
 
 }
 .dwnld_sectn img:last-child{
-	transform: translate(-60%, 300px);
+	/* transform: translate(-60%, 160px); */
+	right: -75px;
+}
+.btn_wrap{
+	margin-bottom: 120px;
 }
 .btn_appl{
 	background: url('../image/appstore.png') center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 .btn_ggl{
-	background: url('../image/google_play.png') center no-repeat: ;
+	background: url('../image/google_play.png') center no-repeat ;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.store_link{
+	display: block;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
 }
 /* **end download section** */
 /* **start footer section** */

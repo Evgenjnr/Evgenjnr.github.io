@@ -13,7 +13,7 @@
 	<link rel='stylesheet' media='screen and (min-width: 1024px) and (max-width: 1279px)' href='styles/min_1024.css' />
 	<link rel='stylesheet' media='screen and (min-width: 980px) and (max-width: 1023px)' href='styles/min_980.css' />
 	<link rel='stylesheet' media='screen and (min-width: 810px) and (max-width: 979px)' href='styles/min_860.css' />
-	<link rel='stylesheet' media='screen and (max-width: 639px)' href='styles/max_640.css' />
+	<link rel='stylesheet' media='screen and (max-width: 639px) and (orientation: portrait)' href='styles/max_640.css' />
 </head>
 <body>
 	<header class="main_header">
@@ -51,8 +51,15 @@
 						<img src="image/top_screen_circles.png" alt="top_screen">
 					</div>
 				</li>
+				<li class="section__item view_down">
+					<div class="btn_to_dwn">
+						<button class="btn_dwn" data-name='widjet'>
+							<i class="fas fa-angle-down"></i>
+						</button>
+					</div>
+				</li>
 			</ul>
-			<div class="btn_to_dwn"><button class="btn_dwn" data-name='widjet'><i class="fas fa-angle-down"></i></button></div>
+			
 		</section>
 		<section class="features wrapper" data-name='features'>
 			<div class="title-section">
@@ -222,21 +229,21 @@
 		</section>
 		<section class="download wrapper" data-name='download'>
 			<ul class="section__list">
-				<li class="section__item">
-					<h2>How Download the app?</h2>
-					<span class="descr">
+				<li class="section__item item_download">
+					<h2 class="download_header">How Download the app?</h2>
+					<span class="descr download_descr">
 						Just download the app from the store. Simple, nice and user-friendly application of the weather. Only relevant and usefull information.
 					</span>
 					<div class="btn_wrap">
 						<button class="btn btn_appl">
-							<a href="https://www.apple.com/ios/app-store/"></a>
+							<a href="https://www.apple.com/ios/app-store/" class="store_link" target="_blank"></a>
 						</button>
 						<button class="btn btn_ggl">
-							<a href="https://play.google.com/"></a>
+							<a href="https://play.google.com/" class="store_link" target="_blank"></a>
 						</button>
 					</div>
 				</li>
-				<li class="section__item">
+				<li class="section__item item_download">
 					<div class="img_wrap dwnld_sectn">
 						<img src="image/SCREEN_cloudy.png" alt="top_screen">
 						<img src="image/SCREEN_sunny.png" alt="top_screen">
@@ -249,15 +256,11 @@
 	<footer class="main_footer">
 		<nav class="nav_header wrapper offset_footer">
 			<span class="logo_title"><span class="red">Fun</span><span class="blue"> Weather.</span></span>
-			<ul class="nav_list" id ='show-footer'>
-				<li class="nav_item" data-name='home'>
-					<a class="active--item" href="#">Home</a></li>
-				<li class="nav_item" data-name='features'>
-					<a href="">Features</a></li>
-				<li class="nav_item" data-name='reviews'>
-					<a href="">Reviews</a></li>
-				<li class="nav_item" data-name='download'>
-					<a href="">download</a></li>
+			<ul class="nav_list">
+				<li class="nav_item" data-name='home'><a class="active--item" href="#">Home</a></li>
+				<li class="nav_item" data-name='features'><a href="#">Features</a></li>
+				<li class="nav_item" data-name='reviews'><a href="#">Reviews</a></li>
+				<li class="nav_item" data-name='download'><a href="#">download</a></li>
 			</ul>
 			<ul class="social_list">
 				<li class="social_item">
