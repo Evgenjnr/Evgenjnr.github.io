@@ -634,9 +634,7 @@ cite{
 	background-size: cover;
 }
 .store_link{
-	display: block;
-	height: 100%;
-	width: 100%;
+	display: inline-block;
 	cursor: pointer;
 }
 /* **end download section** */

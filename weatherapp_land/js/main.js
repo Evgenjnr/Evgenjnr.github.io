@@ -74,8 +74,8 @@ function viewSectionOnBttn(par1){
 
 	function viewSection(par1){
 		for(let target of par1){
-			target.addEventListener('click', function(ev){
-							ev.preventDefault();
+			target.addEventListener('click', function(evnt){
+							evnt.preventDefault();
 				let siblings = this.parentNode.children;
 				for(let item of siblings){
 					if(item.firstChild.classList.contains('active--item')){
