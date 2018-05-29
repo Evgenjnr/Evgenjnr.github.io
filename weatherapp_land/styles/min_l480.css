@@ -1,0 +1,91 @@
+/* **start header section** */
+.nav_header{
+	-webkit-flex-flow: column;
+	-moz-flex-flow: column;
+	-ms-flex-flow: column;
+	-o-flex-flow: column;
+	flex-flow: column;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.logo{
+	font-size: 1.1em;
+}
+.nav_list{
+	padding: 15px 0px;
+}
+.nav_list, .social_list{
+	width: 100%;
+}
+/* **end header section** */
+/* **start top section** */
+.bg_section{
+
+}
+.section__item:first-child{
+	width: 50%;
+}
+.section__item:nth-child(2){
+	width: 50%;
+}
+.section__item h2{
+	font-size: 2em;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+.section__item .descr{
+	font-size: 1em;
+	line-height: 30px;
+	padding-right: 0;
+	margin-bottom: 30px;
+}
+.img_wrap__top-scr{
+	padding: 0;
+}
+.btn_dwn{
+	margin-bottom: 30px;
+}
+.btn_wrap{
+	width: 80%;
+	margin-bottom: 30px;
+}
+
+
+
+/* **end top section** */
+/* **screenshoot section** */
+.screenshoot-descr p, .screenshoot-descr h3{
+	width: 100%;
+}
+/* **end screenshoot section** */
+/* **reviews section** */
+.response{
+	display: block;
+	padding-bottom: 100%;
+}
+.reviews-list{
+	justify-content: center;
+}
+.reviews-list-item{
+	/* width: 100%; */
+}
+/* **end reviews section** */
+/* **download section** */
+.section__item h2.download_header{
+	font-size: 2em;
+}
+
+.btn_appl{
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.btn_ggl{
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+/* **end download section** */
+/* ** footer** */
+.blue, .red{
+	font-size: 18px;
+}
+/* **end footer** */

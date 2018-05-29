@@ -1,5 +1,5 @@
-body{
-	position: relative;
+.title{
+	font-size: 32px;
 }
 .title-sbscr{
 	margin-bottom: 50px;
@@ -99,12 +99,25 @@ body{
 }
 /* **end top section** */
 /* **start features section** */
-.features-list{
+/* .features-list{
 	-webkit-flex-flow: column nowrap;
 	-moz-flex-flow: column nowrap;
 	-ms-flex-flow: column nowrap;
 	-o-flex-flow: column nowrap;
 	flex-flow: column nowrap;
+} */
+.features-list-item{
+	flex-basis: 100%;
+	-webkit-flex-flow: column;
+	-moz-flex-flow: column;
+	-ms-flex-flow: column;
+	-o-flex-flow: column;
+	flex-flow: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+.features-list-item div h3{
+	text-align: center;
 }
 /* **end features section** */
 /* **widjet section** */
@@ -140,6 +153,7 @@ body{
 }
 .reviews-list-item{
 	width: 100%;
+	flex-basis: 0;
 }
 /* ** end review section ** */
 /* ** download section ** */
@@ -186,15 +200,13 @@ body{
 	width: 70%;
 	
 }
-.btn_wrap{
+.item_download .btn_wrap{
 	margin-bottom: 0;
+	justify-content: space-around;
 }
-.btn_appl{
+.btn_appl, .btn_ggl{
 	-webkit-background-size: contain;
 	background-size: contain;
 }
-.btn_ggl{
-	-webkit-background-size: contain;
-	background-size: contain;
-}
+
 /* ** end download section ** */

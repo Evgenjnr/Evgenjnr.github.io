@@ -279,6 +279,7 @@ header{
 	-ms-flex-flow: row wrap;
 	-o-flex-flow: row wrap;
 	flex-flow: row wrap;
+	justify-content: center;
 }
 .features-list-item{
 	display: -webkit-flex;
@@ -286,17 +287,15 @@ header{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	width: calc((100% / 12) * 4 - 15px);
 	-webkit-flex-flow: row nowrap;
 	-moz-flex-flow: row nowrap;
 	-ms-flex-flow: row nowrap;
 	-o-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	padding-bottom: 50px;
-	-webkit-flex: 1 0;
-	-moz-flex: 1 0;
-	-ms-flex: 1 0;
-	-o-flex: 1 0;
-	flex: 1 0;
+	flex-basis: 370px;
+	flex-shrink: 0;
 }
 
 
@@ -576,7 +575,7 @@ header{
 	-ms-flex-flow: row wrap;
 	-o-flex-flow: row wrap;
 	flex-flow: row wrap;
-	justify-content: space-between;
+	justify-content: center;
 	margin-bottom: 70px;
 }
 .reviews-list-item{
@@ -590,9 +589,11 @@ header{
 	-ms-flex-flow: column nowrap;
 	-o-flex-flow: column nowrap;
 	flex-flow: column nowrap;
+	margin: 0 15px;
 	margin-bottom: 55px;
-	padding-right: 15px;
-	width: calc(50% - 15px);
+	flex-basis: 532px;
+	flex-shrink: 1;	
+	width: calc((100% / 12) * 6 - 30px);
 }
 .quote-right i, .qoute-left i{
 	color:#6ca3ff ;
@@ -665,15 +666,18 @@ cite{
 .btn_wrap{
 	margin-bottom: 120px;
 }
+.item_download .btn_wrap{
+	width: 50%;
+}
 .btn_appl{
 	background: url('../image/appstore.png') center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: contain;
+	background-size: contain;
 }
 .btn_ggl{
 	background: url('../image/google_play.png') center no-repeat ;
-	-webkit-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: contain;
+	background-size: contain;
 }
 .store_link{
 	display: inline-block;
