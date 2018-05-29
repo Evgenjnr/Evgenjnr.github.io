@@ -53,6 +53,12 @@ a{
 img{
 	max-width: 100%;
 }
+hr{
+	margin: 0;
+}
+.response{
+	display: none;
+}
 .wrapper{
 	padding: 0 calc(100% / 12);
 }
@@ -61,6 +67,16 @@ header{
 	background: #648cff;
 	position: fixed;
 	z-index: 100;
+}
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
 }
 .nav_header{
 	display: -webkit-flex;
@@ -80,7 +96,7 @@ header{
 	padding-top: 36px;
 }
 
-.logo, .social_list{
+.logo, .social_list, .logo_title{
 	-webkit-flex: 1 0;
 	-moz-flex: 1 0;
 	-ms-flex: 1 0;
@@ -181,8 +197,26 @@ header{
 .bnt_dwnld{
 	background: #fc6a42;
 }
+.bnt_dwnld:hover, .bnt_dwnld:focus{
+	background: #fff;
+	color: #fc6a42;
+	border: solid 3px #fc6a42;
+	box-shadow: 0 0 5px 0px #fff;
+}
+.bnt_dwnld:active{
+	border: inset 3px #fc6a42;
+}
 .bnt_features{
 	background: #4466c9;
+}
+.bnt_features:hover, .bnt_features:focus{
+	background: #fff;
+	color: #4466c9;
+	border: solid 3px #4466c9;
+	box-shadow: 0 0 5px 0px #fff;
+}
+.bnt_features:active{
+	border: inset 3px #4466c9;
 }
 .img_wrap__top-scr{
 	margin-top: 15%;
@@ -239,7 +273,13 @@ header{
 	color: rgba(0, 0, 0, .7);
 	margin-bottom: 90px;
 }
-
+.features-list{
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
 .features-list-item{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -252,6 +292,11 @@ header{
 	-o-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	padding-bottom: 50px;
+	-webkit-flex: 1 0;
+	-moz-flex: 1 0;
+	-ms-flex: 1 0;
+	-o-flex: 1 0;
+	flex: 1 0;
 }
 
 
@@ -605,19 +650,16 @@ cite{
 }
 
 .dwnld_sectn img:nth-child(odd){
-	/* transform: translateY(160px); */
 	top: 80px;
 	filter: blur(3px);
 }
 .dwnld_sectn img:nth-child(even){
-	/* transform: translateX(-28%); */
 	top: 0px;
 	left: 34%;
 	z-index: 1;
 
 }
-.dwnld_sectn img:last-child{
-	/* transform: translate(-60%, 160px); */
+.dwnld_sectn img:nth-child(3){
 	right: -75px;
 }
 .btn_wrap{

@@ -8,13 +8,8 @@
 }
 /* **end header section** */
 /* **start top section** */
-.section__item{
-	width: 50%;
-	-webkit-flex: 1 0;
-	-moz-flex: 1 0;
-	-ms-flex: 1 0;
-	-o-flex: 1 0;
-	flex: 1 0;
+.bg_section{
+
 }
 .section__item h2{
 	font-size: 2em;
@@ -34,9 +29,24 @@
 	margin-bottom: 30px;
 }
 .btn_wrap{
-	width: 80%;
+	width: 100%;
 }
 
 
 
 /* **end top section** */
+/* **screenshoot section** */
+.screenshoot-descr p, .screenshoot-descr h3{
+	width: 100%;
+}
+/* **end screenshoot section** */
+/* **reviews section** */
+.reviews-list-item{
+	width: 100%;
+}
+/* **end reviews section** */
+/* ** footer** */
+.blue, .red{
+	font-size: 18px;
+}
+/* **end footer** */

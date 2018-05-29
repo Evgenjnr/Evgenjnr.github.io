@@ -9,14 +9,15 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel='stylesheet' media='screen and (min-width: 1280px) and (max-width: 1320px)' href='styles/min_1280.css' />
-	<link rel='stylesheet' media='screen and (min-width: 1024px) and (max-width: 1279px)' href='styles/min_1024.css' />
+	<link rel='stylesheet' media='screen and (min-width: 1640px)' href='styles/min_1640.css' />
+	<!-- <link rel='stylesheet' media='screen and (min-width: 1024px) and (max-width: 1279px)' href='styles/min_1024.css' /> -->
 	<link rel='stylesheet' media='screen and (min-width: 980px) and (max-width: 1023px)' href='styles/min_980.css' />
-	<link rel='stylesheet' media='screen and (min-width: 810px) and (max-width: 979px)' href='styles/min_860.css' />
-	<link rel='stylesheet' media='screen and (max-width: 639px) and (orientation: portrait)' href='styles/max_640.css' />
+	<link rel='stylesheet' media='screen and (min-width: 640px) and (max-width: 979px) and (orientation: landscape)' href='styles/min_860.css' />
+	<link rel='stylesheet' media='screen and (min-width: 725px) and (max-width: 979px) and (orientation: portrait)' href='styles/min_' />
+	<link rel='stylesheet' media='screen and (max-width: 724px) and (orientation: portrait)' href='styles/max_640.css' />
 </head>
 <body>
-	<header class="main_header">
+	<header class="main_header headroom">
 		<nav class="nav_header wrapper">
 			<span class="logo">Fun Weather.</span>
 			<ul class="nav_list">
@@ -54,8 +55,8 @@
 						Simple, nice and user-friendly application of the weather. Only useful information.
 					</span>
 					<div class="btn_wrap">
-						<button class="btn bnt_dwnld" data-name='download'>dowload</button>
-						<button class="btn bnt_features" data-name='features'>features</button>
+						<button class="btn bnt_dwnld" data-name='download' type="button">dowload</button>
+						<button class="btn bnt_features" data-name='features' type="button">features</button>
 					</div>
 				</li>
 				<li class="section__item">
@@ -259,6 +260,7 @@
 						<img src="image/SCREEN_cloudy.png" alt="top_screen">
 						<img src="image/SCREEN_sunny.png" alt="top_screen">
 						<img src="image/SCREEN_rain.png" alt="top_screen">
+						<div class="response"></div>
 					</div>
 				</li>
 			</ul>
@@ -283,8 +285,8 @@
 					<a href="https://www.instagram.com" target="_blank">
 						<i class="fab fa-instagram"></i>
 					</a>
-				</li class="social_item">
-				<li>
+				</li>
+				<li class="social_item">
 					<a href="https://www.twitter.com" target="_blank">
 						<i class="fab fa-twitter"></i>
 					</a>
@@ -297,5 +299,8 @@
 		</div>
 	</footer>
 	<script src="js/main.js"></script>
+	<script src="js/headroom.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--[if IE]> <script src="js/"></script> <![endif]-->
 </body>
 </html>
