@@ -145,15 +145,11 @@
 /* **end screenshoot section ** */
 /* ** review section ** */
 .reviews-list{
-	-webkit-flex-flow: column nowrap;
-	-moz-flex-flow: column nowrap;
-	-ms-flex-flow: column nowrap;
-	-o-flex-flow: column nowrap;
-	flex-flow: column nowrap;
+
 }
 .reviews-list-item{
 	width: 100%;
-	flex-basis: 0;
+	flex-basis: auto;
 }
 /* ** end review section ** */
 /* ** download section ** */

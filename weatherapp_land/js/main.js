@@ -9,9 +9,6 @@ menuList    = document.querySelector(".nav_list");
 function init () {
 
 
-let headroom  = new Headroom(mainHeader);
-// инициализация
-headroom.init();
 
 //global set topPadding for each section element eq height of header element
 // let setPadding = function paddTop() {
@@ -63,6 +60,7 @@ headroom.init();
     
 	viewSection(navItem);
 	viewSectionOnBttn(btnShow);
+	hideHider();
 	hideMenu();
 }
 // */end init
@@ -123,5 +121,12 @@ if(window.matchMedia("screen and (max-width: 724px) and (orientation: portrait)"
         }
 	
     });
+}
+}
+function hideHider () {
+if(window.matchMedia("screen and (max-width: 724px) and (orientation: portrait)").matches){
+    let headroom  = new Headroom(mainHeader);
+// инициализация
+    headroom.init();
 }
 }
