@@ -204,6 +204,7 @@
 .item_download .btn_wrap{
 	margin-bottom: 0;
 	justify-content: space-around;
+	width: 100%;
 }
 .btn_appl, .btn_ggl{
 	-webkit-background-size: contain;
