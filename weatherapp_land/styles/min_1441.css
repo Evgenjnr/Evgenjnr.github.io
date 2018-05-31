@@ -1,0 +1,21 @@
+/* **start header section** */
+/* .device img, .dwnld_sectn img{
+	width: 100%;
+} */
+/* **end header section** */
+/* **start top section** */
+
+.section__item h2{
+	font-size: 60px;
+}
+
+/* **end top section** */
+/* **download section** */
+.dwnld_sectn img:nth-child(even){
+	top: 0px;
+	left: 25%;
+}
+.dwnld_sectn img:nth-child(3){
+	right: 18%;
+}
+/* **end download section** */

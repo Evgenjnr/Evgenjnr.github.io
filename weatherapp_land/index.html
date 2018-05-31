@@ -9,12 +9,22 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel='stylesheet' media='screen and (min-width: 1640px)' href='styles/min_1640.css' />
+	<link rel='stylesheet' media='screen and (min-width: 1441px)' href='styles/min_1441.css' />
 	<link rel='stylesheet' media='screen and (min-width: 480px) and (max-width: 979px) and (orientation: landscape)' href='styles/min_l480.css' />
 	<link rel='stylesheet' media='screen and (min-width: 725px) and (max-width: 979px) and (orientation: portrait)' href='styles/min_p640.css' />
 	<link rel='stylesheet' media='screen and (max-width: 724px) and (orientation: portrait)' href='styles/max_640.css' />
 </head>
 <body>
+	<!-- preloader -->
+	<div class="preloader">
+		<span class="preload">
+			<span class="inset inset1"></span>
+			<span class="inset inset2"></span>
+			<span class="inset inset3"></span>
+			<span class="inset inset4"></span>
+		</span>
+	</div>
+	<!-- end preloader -->
 	<header class="main_header headroom">
 		<nav class="nav_header wrapper">
 			<span class="logo">Fun Weather.</span>
@@ -296,6 +306,13 @@
 			<span class="copyright">&copy; 2016 All rights reserved. Weather App Theme by Gravpix</span>
 		</div>
 	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(window).on("load", function(){
+			let $preloader = $(".preloader");
+			$preloader.delay(500).fadeOut("slow");
+		});
+	</script>
 	<script src="js/main.js"></script>
 	<script src="js/headroom.js"></script>
 </body>

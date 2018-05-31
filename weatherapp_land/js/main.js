@@ -7,21 +7,20 @@ btnShow     = document.querySelectorAll("button"),
 navItem     = document.querySelectorAll(".nav_item"),
 menuList    = document.querySelector(".nav_list");
 function init () {
+	let headroom  = new Headroom(mainHeader);
+    headroom.init();
 
+	let setPadding = function paddTop() {
+    let paddTop = getComputedStyle(mainHeader).height;
+    for (let item of sectionElmn) {
+           item.style.paddingTop = paddTop;
+    }
+}
 
-
-//global set topPadding for each section element eq height of header element
-// let setPadding = function paddTop() {
-//    let paddTop = getComputedStyle(mainHeader).height;
-//       for (let item of sectionElmn) {
-//          item.style.paddingTop = paddTop;
-//     }
-// 	// */end set topPadding for each section element eq height of header element
-// }
 	let setColor = function(){
 		for (let showElm of sectionElmn) {
 				if(showElm.getBoundingClientRect().top >= 0 
-					&& showElm.getBoundingClientRect().top < 600){
+					&& showElm.getBoundingClientRect().top < 500){
 					let sectionInView = showElm.getAttribute("data-name");
 				  for(let target of navItem){				  	
 				  	if(target.getAttribute("data-name") == sectionInView){
@@ -35,21 +34,23 @@ function init () {
 				}
 			}
 		}
-
-	// window.addEventListener("load", setPadding);
-	// window.addEventListener("resize", setPadding);
+    
+     window.addEventListener("load", setPadding);
+	 window.addEventListener("resize", setPadding);
 	window.addEventListener("scroll", setColor);
-
 	
+	// window.addEventListener("scroll", hideHider);
+
 	
 	// hide/show navMenu in header for mobile
 
 	menuBtn.addEventListener("click", function () {
 		
-		if(menuList.classList.contains("nav_list--show")){
+		if(menuList.matches("nav_list--show")){
 		   menuList.classList.remove("nav_list--show");
 		}else{
 		   menuList.classList.add("nav_list--show");
+		   document.body.style.overflow = "hidden";
 		}
 		
 	});
@@ -60,7 +61,6 @@ function init () {
     
 	viewSection(navItem);
 	viewSectionOnBttn(btnShow);
-	hideHider();
 	hideMenu();
 }
 // */end init
@@ -74,7 +74,9 @@ function viewSectionOnBttn(par1){
 				let targetAttr = this.getAttribute("data-name");
 				for (let showElm of sectionElmn) {
 					if(showElm.getAttribute("data-name") == targetAttr){
-					showElm.scrollIntoView({behavior: "smooth"});
+					showElm.scrollIntoView({behavior: "smooth", block:"start"});
+					// let paddTop = getComputedStyle(mainHeader).height;
+					// showElm.style.paddingTop = paddTop;
 					}
 				}
 				
@@ -86,9 +88,10 @@ function viewSectionOnBttn(par1){
 		for(let target of par1){
 			target.addEventListener("click", function(evnt){
 							evnt.preventDefault();
+				document.body.style.overflow = "visible";
 				let siblings = this.parentNode.children;
 				for(let item of siblings){
-					if(item.firstChild.classList.contains("active--item")){
+					if(item.firstChild.matches("active--item")){
 						item.firstChild.classList.remove("active--item");
 					}
 						this.firstChild.classList.add("active--item");
@@ -97,9 +100,9 @@ function viewSectionOnBttn(par1){
 				let targetAttr = this.getAttribute("data-name");
 				for (let showElm of sectionElmn) {
 					if(showElm.getAttribute("data-name") == targetAttr){
-					showElm.scrollIntoView({behavior:"smooth"});
-					let paddTop = getComputedStyle(mainHeader).height;
-					showElm.style.paddingTop = paddTop;
+					showElm.scrollIntoView({behavior:"smooth", block:"start"});
+					// let paddTop = getComputedStyle(mainHeader).height;
+					// showElm.style.paddingTop = paddTop;
 					}
 				}
 				if(window.matchMedia("screen and (max-width: 724px) and (orientation: portrait)").matches){
@@ -121,12 +124,5 @@ if(window.matchMedia("screen and (max-width: 724px) and (orientation: portrait)"
         }
 	
     });
-}
-}
-function hideHider () {
-if(window.matchMedia("screen and (max-width: 724px) and (orientation: portrait)").matches){
-    let headroom  = new Headroom(mainHeader);
-// инициализация
-    headroom.init();
 }
 }
