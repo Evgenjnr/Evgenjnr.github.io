@@ -7,6 +7,10 @@ btnShow     = document.querySelectorAll("button"),
 navItem     = document.querySelectorAll(".nav_item"),
 menuList    = document.querySelector(".nav_list");
 function init () {
+	window.onload = function (){
+		let preloader = document.querySelector(".preloader") ;
+		preloader.style.display = 'none';
+	}
 	let headroom  = new Headroom(mainHeader);
     headroom.init();
 
