@@ -194,6 +194,9 @@
   -o-flex-flow: column nowrap;
   flex-flow: column nowrap;
 }
+.section__item h2.download_header{
+	width: 100%;
+}
 .dwnld_sectn img{
 	width: 70%;
 	
