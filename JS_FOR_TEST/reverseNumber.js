@@ -7,7 +7,8 @@ function reverseNumber () {
 	newArr        = arr.sort().reverse();//сортируем массив по убыванию, 
 	                                  //результат заносим в пустой массив
 	let newString = newArr.join('');//преобразование массива в строку
-	let newNumber = Number(newString);//преобразование массива в число*/
+	let newNumber = Number(newString);//преобразование строки в число*/
+
 
     let newArr = String(someNumber).split('').sort().reverse().join('');
     let newNumber = Number(newArr);
