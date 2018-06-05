@@ -5,7 +5,7 @@ function init () {
 	let button = document.querySelector('.initButton')
 	button.addEventListener('click', function (ev) {
 		if(button.value == "Sort & Reverse"){
-			let getNumber = document.querySelector('#input').value;		
+			let getNumber = inputNumber.value;		
 			sortNreverse (getNumber);
 			button.value = "Clear";
 		}else{
