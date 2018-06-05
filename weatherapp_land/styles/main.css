@@ -62,6 +62,16 @@ hr{
 .wrapper{
 	padding: 0 calc(100% / 12);
 }
+.close_mob_menu{
+	display: none;
+	-ms-align-self: flex-end;
+	align-self: flex-end;
+	margin-right: 30px;
+}
+.close_mob_menu i{
+	font-size: 36px;
+	color: #fff;
+}
 /* preloader */
 .preloader{
 	position: fixed;

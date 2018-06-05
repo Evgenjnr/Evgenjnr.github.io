@@ -38,6 +38,7 @@
 	-ms-flex-flow: 	column nowrap;
 	-o-flex-flow: 	column nowrap;
 	flex-flow: 	column nowrap;
+	justify-content: space-around;
 	-ms-align-items: center;
 	align-items: center;	
 	width: 100%;
@@ -45,9 +46,12 @@
 	margin: 0;
 	order: 2;
 }
-.nav_item:not(:first-child){
-	margin-top: 30px;
+.close_mob_menu{
+	display: block;
 }
+/* .nav_item:not(:first-child){
+	margin-top: 30px;
+} */
 .social_list{
 	margin: 30px 0;
 }

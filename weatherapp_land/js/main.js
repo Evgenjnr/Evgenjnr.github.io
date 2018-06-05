@@ -125,6 +125,7 @@ if(window.matchMedia("screen and (max-width: 724px) and (orientation: portrait)"
     menuList.addEventListener("click", function(){
         if(menuList.classList.contains("nav_list--show")){
             menuList.classList.remove("nav_list--show");
+            document.body.style.overflow = "visible";
         }	
     });
 }
