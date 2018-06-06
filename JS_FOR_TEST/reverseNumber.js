@@ -1,16 +1,17 @@
 window.addEventListener('DOMContentLoaded', init);
  let outPut       = document.querySelector('#output');
- let inputNumber = document.querySelector('#input');
+ let inputString = document.querySelector('#input');
+
 function init () {
 	let button = document.querySelector('.initButton')
 	button.addEventListener('click', function (ev) {
 		if(button.value == "Sort & Reverse"){
-			let getNumber = inputNumber.value;		
+		let getNumber = inputString.value;		
 			sortNreverse (getNumber);
 			button.value = "Clear";
 		}else{
 			button.value = "Sort & Reverse";
-			inputNumber.value = "";
+			inputString.value = "";
 			outPut.value = "";
 		}
 		
@@ -22,6 +23,13 @@ function init () {
 
 
 function sortNreverse (inputNumber) {
+	let newArr = inputNumber.split('').sort().reverse().join('');
+    let newNumber = Number(newArr);
+	    if(inputNumber != '' && inputNumber != 0 && !isNaN(newNumber)){
+	    	outPut.value = newNumber;
+	    }else{
+	    	outPut.value = "Введите десятичное число";
+	    }
 	/*let x         = String(someNumber);//преобразование числа в строку
 	let arr       = x.split('');//преобразование строки в массив
 	let newArr    = [];//пустой массив
@@ -29,22 +37,6 @@ function sortNreverse (inputNumber) {
 	                                  //результат заносим в пустой массив
 	let newString = newArr.join('');//преобразование массива в строку
 	let newNumber = Number(newString);//преобразование строки в число*/
-
-
-    let newArr = inputNumber.split('').sort().reverse().join('');
-    let newNumber = Number(newArr);
-    console.log(typeof(newNumber));
-
-   
-    if(inputNumber.value != "" && !isNaN(newNumber)){
-    	outPut.value = newNumber;
-    }else{
-    	outPut.value = "Введите десятичное число";
-    }
-	
-	
-	
-
 	// let secondPar       = document.createElement('p');
 	// secondPar.innerHTML = newNumber;
 	// document.body.appendChild(secondPar);
