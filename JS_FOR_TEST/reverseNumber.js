@@ -25,7 +25,7 @@ function sortNreverse (inputNumber) {
 	    	outPut.value = newNumber;
 	    }else if(inputNumber == '' || isNaN(newNumber)){
 	    	outPut.value = "Введите десятичное число";
-	    }else if(inputNumber < 10){
+	    }else if(inputNumber <= 11){
 	    	outPut.value = "Число должно быть больше 11";
 	    }
 	/*let x         = String(someNumber);//преобразование числа в строку
