@@ -17,11 +17,7 @@ function init () {
 		
 		
 	});
-	
-
 }
-
-
 function sortNreverse (inputNumber) {
 	let newArr = inputNumber.split('').sort().reverse().join('');
     let newNumber = Number(newArr);
