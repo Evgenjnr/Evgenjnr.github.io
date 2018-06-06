@@ -25,10 +25,12 @@ function init () {
 function sortNreverse (inputNumber) {
 	let newArr = inputNumber.split('').sort().reverse().join('');
     let newNumber = Number(newArr);
-	    if(inputNumber != '' && inputNumber != 0 && inputNumber >= 10 && !isNaN(newNumber)){
+	    if(inputNumber != '' && inputNumber != 0 && inputNumber > 11 && !isNaN(newNumber)){
 	    	outPut.value = newNumber;
-	    }else{
-	    	outPut.value = "Введите число больше 10";
+	    }else if(inputNumber == '' || isNaN(newNumber)){
+	    	outPut.value = "Введите десятичное число";
+	    }else if(inputNumber < 10){
+	    	outPut.value = "Число должно быть больше 11";
 	    }
 	/*let x         = String(someNumber);//преобразование числа в строку
 	let arr       = x.split('');//преобразование строки в массив
