@@ -21,6 +21,7 @@ body{
 	background: url('48094751.jpg');
 }
 form{
+	padding: 10px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -34,27 +35,29 @@ form{
 	justify-content: space-around;
 	-ms-align-items: center;
 	align-items: center;
-	width: 40%;
-	height: 50%;
-	background: rgba(122, 122, 82, .5);
+	width: 50%;
+	min-width: 320px;
+	background: rgba(0, 122, 82, .7);
 }
 label{
 	color: #fff;
-	font-size: 36px;
+	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: 900;
 	font-family: sans-serif;
 }
 input{
 	height: 46px;
-	width: 80%;
+	width: 100%;
+	margin: 15px 0;
 	font-weight: 900;
 	font-family: sans-serif;
-	font-size: 24px;
+	font-size: 18px;
 	outline: none;
 	text-align: center;
 }
 input[type="button"]{
 	width: 30%;
+	min-width: 200px;
 	font-size: 18px;
 }
